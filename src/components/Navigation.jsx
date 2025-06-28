@@ -22,6 +22,7 @@ const Navigation = ({ activeSection, scrollToSection, setShowConsultationForm })
           <div className="hidden md:flex space-x-8">
             {[
               { id: 'hero', label: 'Home' },
+              { id: 'services', label: 'Services' },
               { id: 'weddings', label: 'Weddings' },
               { id: 'corporate', label: 'Corporate' },
               { id: 'social', label: 'Social' },

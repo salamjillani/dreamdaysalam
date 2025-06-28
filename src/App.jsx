@@ -5,6 +5,7 @@ import Weddings from './components/Weddings';
 import Corporate from './components/Corporate';
 import Social from './components/Social';
 import Launches from './components/Launches';
+import Services from './components/Services';
 import FinalCTA from './components/FinalCTA';
 import Footer from './components/Footer';
 import ConsultationModal from './components/ConsultationModal';
@@ -52,7 +53,7 @@ const App = () => {
   };
   
   const handleScroll = useCallback(() => {
-    const sections = ['hero', 'weddings', 'corporate', 'social', 'launches'];
+    const sections = ['hero', 'weddings', 'services', 'corporate', 'social', 'launches'];
     const scrollPosition = window.scrollY + 100;
 
     for (const section of sections) {
@@ -92,6 +93,7 @@ const App = () => {
         setShowConsultationForm={setShowConsultationForm}
       />
       <Hero scrollToSection={scrollToSection} />
+      <Services setShowConsultationForm={setShowConsultationForm} />
       <Weddings setShowConsultationForm={setShowConsultationForm} />
       <Corporate setShowConsultationForm={setShowConsultationForm} />
       <Social setShowConsultationForm={setShowConsultationForm} />
