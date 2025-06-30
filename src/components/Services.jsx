@@ -115,21 +115,27 @@ const Services = () => {
       title: "Custom Productions",
       description: "We have the tools, decor and effects to curate once in a lifetime experiences, as experts, we can repeat.",
       images: [
-        { src: "/customproductions/production1.png" },
-        { src: "/customproductions/production2.png" },
-        { src: "/customproductions/production3.png" },
-        { src: "/customproductions/production4.png" }
+        { src: "/customproductions/production1.jpeg" },
+        { src: "/customproductions/production2.jpeg" },
+        { src: "/customproductions/production3.jpeg" },
+        { src: "/customproductions/production4.jpeg" },
+        { src: "/customproductions/production5.png" },
+        { src: "/customproductions/production6.png" },
+        { src: "/customproductions/production7.png" }
+    
       ]
     },
     {
       title: "Intimate Gatherings",
       description: "Proposals, announcements, dinners and baby showers, and children's birthdays.",
       images: [
-        { src: "/intimategatherings/intimate1.png" },
-        { src: "/intimategatherings/intimate2.png" },
+        { src: "/intimategatherings/intimate1.jpeg" },
+        { src: "/intimategatherings/intimate2.jpeg" },
         { src: "/intimategatherings/intimate3.png" },
-        { src: "/intimategatherings/intimate4.png" },
-        { src: "/intimategatherings/intimate5.png" }
+        { src: "/intimategatherings/intimate4.jpeg" },
+        { src: "/intimategatherings/intimate5.png" },
+        { src: "/intimategatherings/intimate6.png" },
+        { src: "/intimategatherings/intimate7.png" }
       ]
     }
   ];
