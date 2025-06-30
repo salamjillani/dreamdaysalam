@@ -1,1 +1,16 @@
 @import "tailwindcss";
+
+
+@layer base {
+  body {
+    font-family: 'Source Sans Pro', sans-serif; /* Default body font */
+  }
+
+  .font-playfair {
+    font-family: 'Playfair Display', serif;
+  }
+
+  .font-sans {
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+}

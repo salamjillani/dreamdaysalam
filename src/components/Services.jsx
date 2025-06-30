@@ -129,15 +129,25 @@ const Services = () => {
         { src: "/intimategatherings/intimate2.png" },
         { src: "/intimategatherings/intimate3.png" },
         { src: "/intimategatherings/intimate4.png" },
-        { src: "/intimategatherings/intimate5.png" },
-        { src: "/intimategatherings/intimate6.png" }
+        { src: "/intimategatherings/intimate5.png" }
       ]
     }
   ];
 
   return (
-    <section id="services" className="py-20 px-4">
-      <div className="max-w-7xl mx-auto">
+    <section id="services" className="py-20 px-4 relative overflow-hidden">
+      {/* Background gradient matching Hero section */}
+     <div className="absolute inset-0 bg-gradient-to-br from-[#295185]/20 via-[#fd7aa3]/5 to-[#FEACC6]/10"></div>
+
+      
+      {/* Floating bubble elements */}
+      <div className="absolute top-20 left-10 w-20 h-20 bg-gradient-to-br from-[#FEACC6]/20 to-[#fd7aa3]/15 rounded-full"></div>
+      <div className="absolute bottom-20 right-10 w-32 h-32 bg-gradient-to-br from-[#ffdee9]/20 to-[#FEACC6]/15 rounded-full"></div>
+      <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-gradient-to-br from-[#fd7aa3]/20 to-[#295185]/15 rounded-full"></div>
+      <div className="absolute top-1/3 right-1/4 w-24 h-24 bg-gradient-to-br from-[#FEACC6]/15 to-[#ffdee9]/20 rounded-full"></div>
+      <div className="absolute bottom-1/3 left-1/3 w-18 h-18 bg-gradient-to-br from-[#295185]/15 to-[#fd7aa3]/20 rounded-full"></div>
+      
+      <div className="max-w-7xl mx-auto relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-white via-[#ffdee9] to-[#FEACC6] bg-clip-text text-transparent mb-6">
             Our Services

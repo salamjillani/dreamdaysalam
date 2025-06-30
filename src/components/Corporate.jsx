@@ -30,10 +30,11 @@ const Corporate = ({ setShowConsultationForm }) => {
 
   return (
     <section id="corporate" className="py-20 relative">
-      <div className="absolute inset-0 bg-gradient-to-br from-[#295185]/20 via-[#1d395e]/10 to-[#112137]/20"></div>
+     <div className="absolute inset-0 bg-gradient-to-br from-[#295185]/20 via-[#fd7aa3]/5 to-[#FEACC6]/10"></div>
+
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <div className="inline-flex p-4 bg-gradient-to-br from-[#295185] to-[#1d395e] rounded-3xl mb-6 shadow-lg">
+          <div className="inline-flex p-4  bg-gradient-to-br from-[#295185] to-[#fd7aa3] rounded-3xl mb-6 shadow-lg">
             <Briefcase className="w-16 h-16 text-[#FEACC6]" />
           </div>
           <h2 className="text-5xl font-bold text-white mb-6">Corporate Events</h2>
@@ -52,6 +53,9 @@ const Corporate = ({ setShowConsultationForm }) => {
           ))}
         </div>
       </div>
+            <div className="absolute top-20 left-10 w-20 h-20 bg-gradient-to-br from-[#FEACC6]/20 to-[#fd7aa3]/15 rounded-full"></div>
+      <div className="absolute bottom-20 right-10 w-32 h-32 bg-gradient-to-br from-[#ffdee9]/20 to-[#FEACC6]/15 rounded-full"></div>
+      <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-gradient-to-br from-[#fd7aa3]/20 to-[#295185]/15 rounded-full"></div>
     </section>
   );
 };

@@ -4,7 +4,8 @@ import { ChevronDown } from 'lucide-react';
 const Hero = ({ scrollToSection }) => {
   return (
     <section id="hero" className="min-h-screen flex items-center justify-center relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-[#ffdee9]/20 via-[#FEACC6]/10 to-[#fd7aa3]/20"></div>
+     <div className="absolute inset-0 bg-gradient-to-br from-[#295185]/20 via-[#fd7aa3]/5 to-[#FEACC6]/10"></div>
+
       <div className="relative z-10 text-center max-w-4xl mx-auto px-4">
         <h1 className="text-6xl md:text-8xl font-bold bg-gradient-to-r from-white via-[#ffdee9] to-[#FEACC6] bg-clip-text text-transparent mb-6 tracking-tight">
           DREAMDAY
