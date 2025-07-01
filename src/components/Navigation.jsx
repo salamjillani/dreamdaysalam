@@ -3,20 +3,19 @@ import React from 'react';
 const Navigation = ({ activeSection, scrollToSection, setShowConsultationForm }) => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-40 bg-[#435A79] border-b border-[#FEACC6]/20">
-
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
-            <img 
-              src="DreamDay.png" 
-              alt="DreamDay Logo" 
+            <img
+              src="DreamDay.png"
+              alt="DreamDay Logo"
               className="h-14 w-auto"
               onError={(e) => {
                 e.target.style.display = 'none';
                 e.target.nextSibling.style.display = 'block';
               }}
             />
-            <div className="text-2xl font-bold bg-gradient-to-r from-[#FEACC6] to-[#fd7aa3] bg-clip-text text-transparent hidden">
+            <div className="text-2xl font-thin bg-gradient-to-r from-[#FEACC6] to-[#fd7aa3] bg-clip-text text-transparent hidden tracking-wider">
               DREAMDAY
             </div>
           </div>
@@ -32,7 +31,7 @@ const Navigation = ({ activeSection, scrollToSection, setShowConsultationForm })
               <button
                 key={id}
                 onClick={() => scrollToSection(id)}
-                className={`text-white hover:text-[#FEACC6] transition-colors duration-300 font-medium ${
+                className={`text-white hover:text-[#FEACC6] transition-colors duration-300 font-thin tracking-wide ${
                   activeSection === id ? 'text-[#FEACC6]' : ''
                 }`}
               >
