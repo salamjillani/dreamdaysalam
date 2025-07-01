@@ -5,8 +5,17 @@ const Hero = ({ scrollToSection }) => {
   return (
     <section id="hero" className="min-h-screen flex items-center justify-center relative overflow-hidden">
      <div className="absolute inset-0 bg-gradient-to-br from-[#295185]/20 via-[#fd7aa3]/5 to-[#FEACC6]/10"></div>
-
+       
       <div className="relative z-10 text-center max-w-4xl mx-auto px-4">
+        {/* Logo */}
+        <div className="mb-8">
+          <img 
+            src="DreamDay.png" 
+            alt="DreamDay Logo" 
+            className="mx-auto w-32 h-32 md:w-40 md:h-40 object-contain drop-shadow-2xl"
+          />
+        </div>
+        
         <h1 className="text-6xl md:text-8xl font-bold bg-gradient-to-r from-white via-[#ffdee9] to-[#FEACC6] bg-clip-text text-transparent mb-6 tracking-tight">
           DREAMDAY
         </h1>
@@ -21,7 +30,7 @@ const Hero = ({ scrollToSection }) => {
           <ChevronDown className="inline-block ml-2 w-6 h-6 group-hover:translate-y-1 transition-transform" />
         </button>
       </div>
-      
+             
       {/* Simplified Floating Elements */}
       <div className="absolute top-20 left-10 w-20 h-20 bg-gradient-to-br from-[#FEACC6]/20 to-[#fd7aa3]/15 rounded-full"></div>
       <div className="absolute bottom-20 right-10 w-32 h-32 bg-gradient-to-br from-[#ffdee9]/20 to-[#FEACC6]/15 rounded-full"></div>
