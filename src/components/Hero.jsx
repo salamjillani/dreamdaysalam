@@ -16,12 +16,6 @@ const Hero = ({ scrollToSection }) => {
           />
         </div>
         
-        <h1 className="text-6xl md:text-8xl font-bold bg-gradient-to-r from-white via-[#ffdee9] to-[#FEACC6] bg-clip-text text-transparent mb-6 tracking-tight">
-          DREAMDAY
-        </h1>
-        <p className="text-2xl md:text-3xl text-[#ffdee9] mb-8 font-light">
-          Every Detail, Perfectly Planned
-        </p>
         <button
           onClick={() => scrollToSection('weddings')}
           className="group bg-gradient-to-r from-[#FEACC6] to-[#fd7aa3] hover:from-[#fd7aa3] hover:to-[#FEACC6] text-[#112137] text-xl px-12 py-4 rounded-full transition-all duration-300 transform hover:scale-105 shadow-2xl hover:shadow-[#fd7aa3]/25 font-bold"
