@@ -158,7 +158,7 @@ const Services = () => {
           <h2 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-white via-[#ffdee9] to-[#FEACC6] bg-clip-text text-transparent mb-6">
             Our Services
           </h2>
-          <p className="text-xl text-[#ffdee9] max-w-3xl mx-auto">
+          <p className="text-xl text-[#ffdee9] mx-auto">
             From intimate gatherings to grand celebrations, we craft unforgettable experiences tailored to your vision
           </p>
         </div>
