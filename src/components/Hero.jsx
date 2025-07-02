@@ -20,7 +20,7 @@ const Hero = ({ scrollToSection }) => {
           <img 
             src="DreamDay.png" 
             alt="DreamDay Logo" 
-            className="mx-auto w-20 h-20 sm:w-28 sm:h-28 md:w-32 md:h-32 lg:w-130 lg:h-130 object-contain drop-shadow-2xl"
+            className="mx-auto w-20 h-20 sm:w-28 sm:h-28 md:w-32 md:h-32 lg:w-140 lg:h-140 object-contain drop-shadow-2xl"
           />
         </div>
         
