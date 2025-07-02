@@ -103,9 +103,7 @@ const Services = () => {
         { src: "/corporateevents/corporateevents1.png" },
         { src: "/corporateevents/corporateevents2.png" },
         { src: "/corporateevents/corporateevents3.png" },
-        { src: "/corporateevents/corporateevents4.png" },
-        { src: "/corporateevents/corporateevents5.png" },
-        { src: "/corporateevents/corporateevents6.png" }
+        { src: "/corporateevents/corporateevents4.png" }
       ]
     },
     {
@@ -114,9 +112,7 @@ const Services = () => {
       images: [
         { src: "/themedcelebrations/themed1.png" },
         { src: "/themedcelebrations/themed2.png" },
-        { src: "/themedcelebrations/themed3.png" },
-        { src: "/themedcelebrations/themed4.png" },
-        { src: "/themedcelebrations/themed5.png" }
+        { src: "/themedcelebrations/themed3.png" }
       ]
     },
     {
