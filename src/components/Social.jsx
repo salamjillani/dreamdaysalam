@@ -36,8 +36,8 @@ const Social = ({ setShowConsultationForm }) => {
           <div className="inline-flex p-4  bg-gradient-to-br from-[#295185] to-[#fd7aa3] rounded-3xl mb-6 shadow-lg">
             <Gift className="w-16 h-16 text-[#112137]" />
           </div>
-          <h2 className="text-5xl font-bold text-white mb-6">Social Celebrations</h2>
-          <p className="text-xl text-[#ffdee9] max-w-3xl mx-auto leading-relaxed">
+          <h2 className="text-5xl font-cinzel-bold text-white mb-6">Social Celebrations</h2>
+          <p className="text-xl text-[#ffdee9] max-w-3xl mx-auto leading-relaxed font-montserrat-light">
             DreamDay transforms life's moments into unforgettable celebrations.
           </p>
         </div>

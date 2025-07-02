@@ -2,7 +2,7 @@ import React from 'react';
 
 const Navigation = ({ activeSection, scrollToSection, setShowConsultationForm }) => {
   return (
-    <nav className="fixed top-0 left-0 right-0 z-40 bg-[#435A79] border-b border-[#FEACC6]/20">
+    <nav className="fixed top-0 left-0 right-0 z-40 bg-[#344C6E] border-b border-[#FEACC6]/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
@@ -15,23 +15,23 @@ const Navigation = ({ activeSection, scrollToSection, setShowConsultationForm })
                 e.target.nextSibling.style.display = 'block';
               }}
             />
-            <div className="text-2xl font-thin bg-gradient-to-r from-[#FEACC6] to-[#fd7aa3] bg-clip-text text-transparent hidden tracking-wider">
+            <div className="text-2xl font-cinzel bg-gradient-to-r from-[#FEACC6] to-[#fd7aa3] bg-clip-text text-transparent hidden tracking-wider">
               DREAMDAY
             </div>
           </div>
           <div className="hidden md:flex space-x-8">
             {[
-              { id: 'hero', label: 'Home' },
-              { id: 'services', label: 'Services' },
-              { id: 'weddings', label: 'Weddings' },
-              { id: 'corporate', label: 'Corporate' },
-              { id: 'social', label: 'Social' },
-              { id: 'launches', label: 'Launches' }
+              { id: 'hero', label: 'HOME' },
+              { id: 'services', label: 'SERVICES' },
+              { id: 'weddings', label: 'WEDDINGS' },
+              { id: 'corporate', label: 'CORPORATE' },
+              { id: 'social', label: 'SOCIAL' },
+              { id: 'launches', label: 'LAUNCHES' }
             ].map(({ id, label }) => (
               <button
                 key={id}
                 onClick={() => scrollToSection(id)}
-                className={`text-white hover:text-[#FEACC6] transition-colors duration-300 font-thin tracking-wide ${
+                className={`text-white hover:text-[#FEACC6] transition-colors duration-300 font-montserrat-light tracking-wide ${
                   activeSection === id ? 'text-[#FEACC6]' : ''
                 }`}
               >
@@ -41,9 +41,9 @@ const Navigation = ({ activeSection, scrollToSection, setShowConsultationForm })
           </div>
           <button
             onClick={() => setShowConsultationForm(true)}
-            className="bg-gradient-to-r from-[#FEACC6] to-[#fd7aa3] hover:from-[#fd7aa3] hover:to-[#FEACC6] text-[#112137] px-6 py-2 rounded-full transition-all duration-300 transform hover:scale-105 font-bold shadow-lg"
+            className="bg-gradient-to-r from-[#FEACC6] to-[#fd7aa3] hover:from-[#fd7aa3] hover:to-[#FEACC6] text-[#112137] px-6 py-2 rounded-full transition-all duration-300 transform hover:scale-105 font-cinzel-medium shadow-lg"
           >
-            Book Consultation
+            BOOK CONSULTATION
           </button>
         </div>
       </div>

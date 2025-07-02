@@ -1,3 +1,4 @@
+// Launches.jsx
 import React from 'react';
 import { Rocket } from 'lucide-react';
 import PackageCard from './PackageCard';
@@ -35,8 +36,8 @@ const Launches = ({ setShowConsultationForm }) => {
           <div className="inline-flex p-4 bg-gradient-to-br from-[#295185] to-[#fd7aa3] rounded-3xl mb-6 shadow-lg">
             <Rocket className="w-16 h-16 text-white" />
           </div>
-          <h2 className="text-5xl font-bold text-white mb-6">Brand, Product, and Service Launches</h2>
-          <p className="text-xl text-[#ffdee9] max-w-3xl mx-auto leading-relaxed">
+          <h2 className="text-5xl font-cinzel-bold text-white mb-6">Brand, Product, and Service Launches</h2>
+          <p className="text-xl text-[#ffdee9] max-w-3xl mx-auto leading-relaxed font-montserrat-light">
             DreamDay orchestrates unforgettable launches that make lasting impressions.
           </p>
         </div>

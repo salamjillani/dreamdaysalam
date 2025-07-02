@@ -1,8 +1,17 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const ImageCarousel = ({ images, title, description }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
+
+  // Auto-advance images every 3 seconds
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 5000);
+
+    return () => clearInterval(timer);
+  }, [images.length]);
 
   const nextSlide = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
@@ -15,13 +24,13 @@ const ImageCarousel = ({ images, title, description }) => {
   return (
     <div className="mb-16">
       <div className="text-center mb-8">
-        <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">{title}</h3>
-        <p className="text-lg text-[#ffdee9] max-w-3xl mx-auto leading-relaxed">
+        <h3 className="text-2xl md:text-3xl font-cinzel-semibold text-white mb-4">{title}</h3>
+        <p className="text-lg text-[#ffdee9] max-w-3xl mx-auto leading-relaxed font-montserrat-light">
           {description}
         </p>
       </div>
       
-      <div className="relative max-w-4xl mx-auto">
+      <div className="relative w-full">
         <div className="relative overflow-hidden rounded-2xl shadow-2xl">
           <div 
             className="flex transition-transform duration-500 ease-in-out"
@@ -32,7 +41,7 @@ const ImageCarousel = ({ images, title, description }) => {
                 <img
                   src={image.src}
                   alt={image.alt}
-                  className="w-full h-80 md:h-96 object-cover"
+                  className="w-full h-64 sm:h-80 md:h-96 lg:h-[28rem] xl:h-[32rem] object-cover"
                 />
               </div>
             ))}
@@ -107,8 +116,7 @@ const Services = () => {
         { src: "/themedcelebrations/themed2.png" },
         { src: "/themedcelebrations/themed3.png" },
         { src: "/themedcelebrations/themed4.png" },
-        { src: "/themedcelebrations/themed5.png" },
-        { src: "/themedcelebrations/themed6.png" }
+        { src: "/themedcelebrations/themed5.png" }
       ]
     },
     {
@@ -119,9 +127,7 @@ const Services = () => {
         { src: "/customproductions/production2.jpeg" },
         { src: "/customproductions/production3.jpeg" },
         { src: "/customproductions/production4.jpeg" },
-        { src: "/customproductions/production5.png" },
-        { src: "/customproductions/production6.png" },
-        { src: "/customproductions/production7.png" }
+        { src: "/customproductions/production5.png" }
     
       ]
     },
@@ -135,7 +141,7 @@ const Services = () => {
         { src: "/intimategatherings/intimate4.jpeg" },
         { src: "/intimategatherings/intimate5.png" },
         { src: "/intimategatherings/intimate6.png" },
-        { src: "/intimategatherings/intimate7.png" }
+        { src: "/intimategatherings/intimate7.png" },
       ]
     }
   ];
@@ -155,10 +161,10 @@ const Services = () => {
       
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-white via-[#ffdee9] to-[#FEACC6] bg-clip-text text-transparent mb-6">
+          <h2 className="text-5xl md:text-6xl font-cinzel-bold bg-gradient-to-r from-white via-[#ffdee9] to-[#FEACC6] bg-clip-text text-transparent mb-6">
             Our Services
           </h2>
-          <p className="text-xl text-[#ffdee9] mx-auto">
+          <p className="text-xl text-[#ffdee9] mx-auto font-montserrat-light">
             From intimate gatherings to grand celebrations, we craft unforgettable experiences tailored to your vision
           </p>
         </div>

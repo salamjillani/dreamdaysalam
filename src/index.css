@@ -1,9 +1,18 @@
 @import "tailwindcss";
 
-
 @layer base {
   body {
     font-family: 'Source Sans Pro', sans-serif; /* Default body font */
+  }
+
+  /* Font family utilities */
+  .font-cinzel {
+    font-family: 'Cinzel', serif;
+  }
+
+  .font-montserrat-light {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
   }
 
   .font-playfair {
@@ -12,5 +21,28 @@
 
   .font-sans {
     font-family: 'Source Sans Pro', sans-serif;
+  }
+}
+
+/* Additional font weight utilities for new fonts */
+@layer utilities {
+  .font-cinzel-light {
+    font-family: 'Cinzel', serif;
+    font-weight: 400;
+  }
+  
+  .font-cinzel-medium {
+    font-family: 'Cinzel', serif;
+    font-weight: 500;
+  }
+  
+  .font-cinzel-semibold {
+    font-family: 'Cinzel', serif;
+    font-weight: 600;
+  }
+  
+  .font-cinzel-bold {
+    font-family: 'Cinzel', serif;
+    font-weight: 700;
   }
 }
