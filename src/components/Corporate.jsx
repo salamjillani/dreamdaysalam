@@ -40,7 +40,7 @@ const Corporate = ({ setShowConsultationForm }) => {
             <Briefcase className="w-16 h-16 text-[#FEACC6]" />
           </div>
           <h2 className="text-5xl font-cinzel-bold text-white mb-6">Corporate Events</h2>
-          <p className="text-xl text-[#ffdee9] max-w-3xl mx-auto leading-relaxed font-montserrat-light">
+          <p className="text-xl text-[#ffdee9] max-w-3xl mx-auto leading-relaxed font-montserrat-light whitespace-nowrap">
             DreamDay designs corporate experiences that inspire, impress, and deliver impact.
           </p>
         </div>

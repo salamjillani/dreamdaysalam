@@ -129,8 +129,8 @@ const Services = () => {
       title: "Intimate Gatherings",
       description: "Proposals, announcements, dinners and baby showers, and children's birthdays.",
       images: [
-        { src: "/intimategatherings/intimate1.jpeg" },
-        { src: "/intimategatherings/intimate2.png" },
+        { src: "/intimategatherings/intimate1.png" },
+        { src: "/intimategatherings/intimate2.jpeg" },
         { src: "/intimategatherings/intimate3.jpeg" },
         { src: "/intimategatherings/intimate4.png" },
         { src: "/intimategatherings/intimate5.png" },
