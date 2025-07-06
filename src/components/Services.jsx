@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
+import React, { useState, useEffect } from "react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const ImageCarousel = ({ images, title, description }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -18,21 +18,25 @@ const ImageCarousel = ({ images, title, description }) => {
   };
 
   const prevSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
+    setCurrentIndex(
+      (prevIndex) => (prevIndex - 1 + images.length) % images.length
+    );
   };
 
   return (
     <div className="mb-16">
       <div className="text-center mb-8">
-        <h3 className="text-2xl md:text-3xl font-cinzel-semibold text-white mb-4">{title}</h3>
+        <h3 className="text-2xl md:text-3xl font-cinzel-semibold text-white mb-4">
+          {title}
+        </h3>
         <p className="text-lg text-[#ffdee9] max-w-3xl mx-auto leading-relaxed font-montserrat-light">
           {description}
         </p>
       </div>
-      
+
       <div className="relative w-full">
         <div className="relative overflow-hidden rounded-2xl shadow-2xl">
-          <div 
+          <div
             className="flex transition-transform duration-500 ease-in-out"
             style={{ transform: `translateX(-${currentIndex * 100}%)` }}
           >
@@ -41,12 +45,12 @@ const ImageCarousel = ({ images, title, description }) => {
                 <img
                   src={image.src}
                   alt={image.alt}
-                  className="w-full h-64 sm:h-80 md:h-96 lg:h-[28rem] xl:h-[32rem] object-cover"
+                  className="w-full h-80 sm:h-96 md:h-[32rem] lg:h-[40rem] xl:h-[44rem] object-cover"
                 />
               </div>
             ))}
           </div>
-          
+
           {/* Navigation Buttons */}
           <button
             onClick={prevSlide}
@@ -54,7 +58,7 @@ const ImageCarousel = ({ images, title, description }) => {
           >
             <ChevronLeft className="w-6 h-6" />
           </button>
-          
+
           <button
             onClick={nextSlide}
             className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full transition-all duration-200 hover:scale-110"
@@ -62,7 +66,7 @@ const ImageCarousel = ({ images, title, description }) => {
             <ChevronRight className="w-6 h-6" />
           </button>
         </div>
-        
+
         {/* Dots Indicator */}
         <div className="flex justify-center mt-6 space-x-2">
           {images.map((_, index) => (
@@ -71,8 +75,8 @@ const ImageCarousel = ({ images, title, description }) => {
               onClick={() => setCurrentIndex(index)}
               className={`w-3 h-3 rounded-full transition-all duration-200 ${
                 index === currentIndex
-                  ? 'bg-[#FEACC6] scale-125'
-                  : 'bg-white/30 hover:bg-white/50'
+                  ? "bg-[#FEACC6] scale-125"
+                  : "bg-white/30 hover:bg-white/50"
               }`}
             />
           ))}
@@ -86,14 +90,15 @@ const Services = () => {
   const servicesData = [
     {
       title: "Exclusive Venues",
-      description: "DreamDay has access to the most elusive and exclusive venues of Southern California.",
+      description:
+        "DreamDay has access to the most elusive and exclusive venues of Southern California.",
       images: [
         { src: "/exclusivevenues/venue1.png" },
         { src: "/exclusivevenues/venue2.png" },
         { src: "/exclusivevenues/venue3.png" },
         { src: "/exclusivevenues/venue4.png" },
-        { src: "/exclusivevenues/venue5.png" }
-      ]
+        { src: "/exclusivevenues/venue5.png" },
+      ],
     },
     {
       title: "Corporate Events",
@@ -102,66 +107,75 @@ const Services = () => {
         { src: "/corporateevents/corporateevents1.png" },
         { src: "/corporateevents/corporateevents2.png" },
         { src: "/corporateevents/corporateevents3.png" },
-        { src: "/corporateevents/corporateevents4.png" }
-      ]
+        { src: "/corporateevents/corporateevents4.png" },
+      ],
     },
     {
       title: "Themed Celebrations",
-      description: "Adventures and sweet sixteen parties, themed to match the energy you want your guests to experience.",
+      description:
+        "Adventures and sweet sixteen parties, themed to match the energy you want your guests to experience.",
       images: [
-        { src: "/themedcelebrations/themed1.png" },
-        { src: "/themedcelebrations/themed2.png" },
-        { src: "/themedcelebrations/themed3.png" }
-      ]
+        { src: "/themedcelebrations/themed1.jpg" },
+        { src: "/themedcelebrations/themed2.jpg" },
+        { src: "/themedcelebrations/themed3.jpg" },
+        { src: "/themedcelebrations/themed4.jpg" },
+        { src: "/themedcelebrations/themed5.jpg" },
+        { src: "/themedcelebrations/themed6.jpg" },
+        { src: "/themedcelebrations/themed7.jpg" },
+        { src: "/themedcelebrations/themed8.png" },
+        { src: "/themedcelebrations/themed9.png" },
+        { src: "/themedcelebrations/themed10.png" }
+      ],
     },
     {
       title: "Custom Productions",
-      description: "We have the tools, decor and effects to curate once in a lifetime experiences, as experts, we can repeat.",
+      description:
+        "We have the tools, decor and effects to curate once in a lifetime experiences, as experts, we can repeat.",
       images: [
         { src: "/customproductions/production1.jpeg" },
         { src: "/customproductions/production2.jpeg" },
         { src: "/customproductions/production3.jpeg" },
-        { src: "/customproductions/production4.png" }
-    
-      ]
+        { src: "/customproductions/production4.png" },
+      ],
     },
     {
       title: "Intimate Gatherings",
-      description: "Proposals, announcements, dinners and baby showers, and children's birthdays.",
+      description:
+        "Proposals, announcements, dinners and baby showers, and children's birthdays.",
       images: [
         { src: "/intimategatherings/intimate1.png" },
         { src: "/intimategatherings/intimate2.jpeg" },
         { src: "/intimategatherings/intimate3.jpeg" },
         { src: "/intimategatherings/intimate4.png" },
         { src: "/intimategatherings/intimate5.png" },
-        { src: "/intimategatherings/intimate6.png" }
-      ]
-    }
+        { src: "/intimategatherings/intimate6.png" },
+      ],
+    },
   ];
 
   return (
     <section id="services" className="py-20 px-4 relative overflow-hidden">
       {/* Background gradient matching Hero section */}
-     <div className="absolute inset-0 bg-gradient-to-br from-[#295185]/20 via-[#fd7aa3]/5 to-[#FEACC6]/10"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-[#295185]/20 via-[#fd7aa3]/5 to-[#FEACC6]/10"></div>
 
-      
       {/* Floating bubble elements */}
       <div className="absolute top-20 left-10 w-20 h-20 bg-gradient-to-br from-[#FEACC6]/20 to-[#fd7aa3]/15 rounded-full"></div>
       <div className="absolute bottom-20 right-10 w-32 h-32 bg-gradient-to-br from-[#ffdee9]/20 to-[#FEACC6]/15 rounded-full"></div>
       <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-gradient-to-br from-[#fd7aa3]/20 to-[#295185]/15 rounded-full"></div>
       <div className="absolute top-1/3 right-1/4 w-24 h-24 bg-gradient-to-br from-[#FEACC6]/15 to-[#ffdee9]/20 rounded-full"></div>
       <div className="absolute bottom-1/3 left-1/3 w-18 h-18 bg-gradient-to-br from-[#295185]/15 to-[#fd7aa3]/20 rounded-full"></div>
-      
+
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-5xl md:text-6xl font-cinzel-bold bg-gradient-to-r from-white via-[#ffdee9] to-[#FEACC6] bg-clip-text text-transparent mb-6">
             Our Services
           </h2>
           <p className="text-xl text-[#ffdee9] mx-auto font-montserrat-light">
-            From intimate gatherings to grand celebrations, we craft unforgettable experiences tailored to your vision
+            From intimate gatherings to grand celebrations, we craft
+            unforgettable experiences tailored to your vision
           </p>
         </div>
-        
+
         {servicesData.map((service, index) => (
           <ImageCarousel
             key={index}

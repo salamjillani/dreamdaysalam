@@ -9,11 +9,11 @@ const PackageCard = ({ pkg, setShowConsultationForm }) => {
       
       <div className="relative z-20">
         <div className="flex items-center justify-between mb-6">
-          <div className="p-3 bg-gradient-to-br from-[#FEACC6] to-[#fd7aa3] rounded-2xl shadow-lg">
+          <div className="p-3 rounded-2xl shadow-lg">
             <img 
               src="tree.png" 
               alt="Tree icon" 
-              className="w-8 h-8 object-contain"
+              className="w-10 h-10 object-contain"
             />
           </div>
           <span className="text-3xl font-cinzel-semibold bg-gradient-to-r from-[#FEACC6] to-[#fd7aa3] bg-clip-text text-transparent">
