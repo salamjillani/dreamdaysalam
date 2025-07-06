@@ -1,5 +1,3 @@
-
-
 // Corporate.jsx
 import React from 'react';
 import { Briefcase } from 'lucide-react';
@@ -12,21 +10,21 @@ const Corporate = ({ setShowConsultationForm }) => {
       price: '$4,500',
       description: 'Professional themes, tech setup, guest management',
       features: ['Professional themes', 'Tech setup', 'Guest management', 'Brand integration'],
-     
+      colorScheme: 'rose' // Rose theme for first package
     },
     {
       name: 'Prestige Package',
       price: '$7,500',
       description: 'Full brand integration, team-building activities',
       features: ['Full brand integration', 'Team-building activities', 'Executive coordination', 'Media management'],
-    
+      colorScheme: 'purple' // Purple theme for second package
     },
     {
       name: 'Executive Retreat',
       price: '$12,000',
       description: 'Luxury venues, executive experiences',
       features: ['Luxury venues', 'Executive experiences', 'Premium catering', 'Concierge services'],
-   
+      colorScheme: 'gold' // Gold theme for third package
     }
   ];
 

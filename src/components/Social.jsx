@@ -9,21 +9,21 @@ const Social = ({ setShowConsultationForm }) => {
       price: '$2,000',
       description: 'Birthdays, showers, intimate events',
       features: ['Intimate settings', 'Personalized themes', 'Guest coordination', 'Photography coordination'],
-     
+      colorScheme: 'rose' // Rose theme for first package
     },
     {
       name: 'Lavish Affair',
       price: '$4,500',
       description: 'Milestone events, luxury rentals',
       features: ['Milestone celebrations', 'Luxury rentals', 'Premium vendors', 'Custom décor'],
-   
+      colorScheme: 'purple' // Purple theme for second package
     },
     {
       name: 'Signature Soiree',
       price: '$7,000',
       description: 'Custom-themed social events',
       features: ['Custom themes', 'Unique experiences', 'Entertainment coordination', 'VIP treatment'],
-    
+      colorScheme: 'gold' // Gold theme for third package
     }
   ];
 
@@ -60,3 +60,5 @@ const Social = ({ setShowConsultationForm }) => {
 };
 
 export default Social;
+
+

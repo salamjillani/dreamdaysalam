@@ -10,18 +10,21 @@ const Launches = ({ setShowConsultationForm }) => {
       price: '$5,500',
       description: 'Press coordination, branded visuals',
       features: ['Press coordination', 'Branded visuals', 'Media management', 'Event logistics'],
+      colorScheme: 'rose' // Rose theme for first package
     },
     {
       name: 'Signature Launch',
       price: '$9,000',
       description: 'Media rollout, influencer management',
       features: ['Media rollout', 'Influencer management', 'Social media strategy', 'Premium venues'],
+      colorScheme: 'purple' // Purple theme for second package
     },
     {
       name: 'Elite Launch',
       price: '$16,000',
       description: 'National campaigns, large-scale activations',
       features: ['National campaigns', 'Large-scale activations', 'Celebrity coordination', 'Multi-city events'],
+      colorScheme: 'gold' // Gold theme for third package
     }
   ];
 

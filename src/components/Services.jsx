@@ -8,7 +8,7 @@ const ImageCarousel = ({ images, title, description }) => {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 5000);
+    }, 10000);
 
     return () => clearInterval(timer);
   }, [images.length]);
@@ -93,21 +93,59 @@ const Services = () => {
       description:
         "DreamDay has access to the most elusive and exclusive venues of Southern California.",
       images: [
-        { src: "/exclusivevenues/venue1.png" },
-        { src: "/exclusivevenues/venue2.png" },
-        { src: "/exclusivevenues/venue3.png" },
-        { src: "/exclusivevenues/venue4.png" },
-        { src: "/exclusivevenues/venue5.png" },
+        { src: "/exclusivevenues/venue1.jpg" },
+        { src: "/exclusivevenues/venue2.jpg" },
+        { src: "/exclusivevenues/venue3.jpg" },
+        { src: "/exclusivevenues/venue4.jpg" },
+        { src: "/exclusivevenues/venue5.jpg" },
+        { src: "/exclusivevenues/venue6.jpg" },
+        { src: "/exclusivevenues/venue7.jpg" },
+        { src: "/exclusivevenues/venue8.jpg" },
+        { src: "/exclusivevenues/venue9.jpg" },
+        { src: "/exclusivevenues/venue10.jpg" },
+        { src: "/exclusivevenues/venue11.jpg" },
+        { src: "/exclusivevenues/venue12.jpg" },
+        { src: "/exclusivevenues/venue13.jpg" },
+        { src: "/exclusivevenues/venue14.jpg" },
+        { src: "/exclusivevenues/venue15.jpg" },
+        { src: "/exclusivevenues/venue16.jpg" },
+        { src: "/exclusivevenues/venue17.jpg" },
+        { src: "/exclusivevenues/venue18.jpg" },
+        { src: "/exclusivevenues/venue19.jpg" },
+        { src: "/exclusivevenues/venue20.jpg" },
+        { src: "/exclusivevenues/venue21.jpg" },
+        { src: "/exclusivevenues/venue22.jpg" },
+        { src: "/exclusivevenues/venue23.jpg" },
+        { src: "/exclusivevenues/venue24.jpg" },
+        { src: "/exclusivevenues/venue25.jpg" },
+        { src: "/exclusivevenues/venue26.jpg" },
+        { src: "/exclusivevenues/venue27.jpg" },
+        { src: "/exclusivevenues/venue28.jpg" }
+
+ 
       ],
     },
     {
       title: "Corporate Events",
       description: "Corporate, indoor and outdoor, theatres and parks.",
       images: [
-        { src: "/corporateevents/corporateevents1.png" },
-        { src: "/corporateevents/corporateevents2.png" },
-        { src: "/corporateevents/corporateevents3.png" },
-        { src: "/corporateevents/corporateevents4.png" },
+        { src: "/corporateevents/corporateevents1.jpg" },
+        { src: "/corporateevents/corporateevents2.jpg" },
+        { src: "/corporateevents/corporateevents3.jpg" },
+        { src: "/corporateevents/corporateevents4.jpg" },
+        { src: "/corporateevents/corporateevents5.jpg" },
+    
+        { src: "/corporateevents/corporateevents7.jpg" },
+        { src: "/corporateevents/corporateevents8.jpg" },
+        { src: "/corporateevents/corporateevents9.jpg" },
+        { src: "/corporateevents/corporateevents10.jpg" },
+        { src: "/corporateevents/corporateevents11.png" },
+        { src: "/corporateevents/corporateevents12.png" },
+        { src: "/corporateevents/corporateevents13.png" },
+        { src: "/corporateevents/corporateevents14.jpg" },
+        { src: "/corporateevents/corporateevents15.png" },
+        { src: "/corporateevents/corporateevents16.jpg" }
+
       ],
     },
     {
@@ -120,11 +158,10 @@ const Services = () => {
         { src: "/themedcelebrations/themed3.jpg" },
         { src: "/themedcelebrations/themed4.jpg" },
         { src: "/themedcelebrations/themed5.jpg" },
-        { src: "/themedcelebrations/themed6.jpg" },
         { src: "/themedcelebrations/themed7.jpg" },
         { src: "/themedcelebrations/themed8.png" },
-        { src: "/themedcelebrations/themed9.png" },
-        { src: "/themedcelebrations/themed10.png" }
+        { src: "/themedcelebrations/themed9.jpg" },
+        { src: "/themedcelebrations/themed10.jpg" }
       ],
     },
     {
@@ -132,10 +169,17 @@ const Services = () => {
       description:
         "We have the tools, decor and effects to curate once in a lifetime experiences, as experts, we can repeat.",
       images: [
-        { src: "/customproductions/production1.jpeg" },
-        { src: "/customproductions/production2.jpeg" },
-        { src: "/customproductions/production3.jpeg" },
-        { src: "/customproductions/production4.png" },
+        { src: "/customproductions/production1.jpg" },
+        { src: "/customproductions/production2.jpg" },
+        { src: "/customproductions/production3.jpg" },
+        { src: "/customproductions/production4.jpg" },
+        { src: "/customproductions/production5.jpg" },
+        { src: "/customproductions/production6.jpg" },
+        { src: "/customproductions/production7.jpg" },
+        { src: "/customproductions/production8.jpg" },
+        { src: "/customproductions/production9.jpeg" },
+        { src: "/customproductions/production10.jpeg" },
+        { src: "/customproductions/production11.jpeg" },
       ],
     },
     {
