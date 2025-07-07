@@ -23,7 +23,7 @@ const Hero = () => {
         lg:px-12
       "
       style={{
-        backgroundImage: 'url("/herodreamday.jpeg")',
+        backgroundImage: 'url("/herodreamday.png")',
         backgroundSize: 'cover',
         backgroundPosition: 'center center',
         backgroundRepeat: 'no-repeat'
