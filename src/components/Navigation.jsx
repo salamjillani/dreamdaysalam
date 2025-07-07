@@ -95,40 +95,36 @@ const Navigation = ({ activeSection, scrollToSection, setShowConsultationForm })
         </div>
       </div>
 
-      {/* Mobile Menu */}
-      <div
-        className={`lg:hidden transition-all duration-300 ease-in-out ${
-          isMobileMenuOpen
-            ? 'max-h-screen opacity-100 visible'
-            : 'max-h-0 opacity-0 invisible'
-        }`}
-      >
-        <div className="px-4 pt-2 pb-4 space-y-1 bg-[#344C6E] border-t border-[#FEACC6]/20">
-          {navigationItems.map(({ id, label }) => (
-            <button
-              key={id}
-              onClick={() => handleNavClick(id)}
-              className={`block w-full text-left px-3 py-2 rounded-md text-base font-montserrat-light tracking-wide transition-colors duration-300 ${
-                activeSection === id
-                  ? 'text-[#FEACC6] bg-[#FEACC6]/10'
-                  : 'text-white hover:text-[#FEACC6] hover:bg-[#FEACC6]/5'
-              }`}
-            >
-              {label}
-            </button>
-          ))}
-          
-          {/* Mobile Consultation Button */}
-          <div className="pt-3 sm:hidden">
-            <button
-              onClick={handleConsultationClick}
-              className="w-full bg-gradient-to-r from-[#FEACC6] to-[#fd7aa3] hover:from-[#fd7aa3] hover:to-[#FEACC6] text-[#112137] px-4 py-3 rounded-full transition-all duration-300 transform hover:scale-105 font-cinzel-medium shadow-lg text-sm"
-            >
-              BOOK CONSULTATION
-            </button>
+      {/* Mobile Menu - Simplified visibility logic */}
+      {isMobileMenuOpen && (
+        <div className="lg:hidden bg-[#344C6E] border-t border-[#FEACC6]/20 animate-in slide-in-from-top-2 duration-200">
+          <div className="px-4 pt-2 pb-4 space-y-1">
+            {navigationItems.map(({ id, label }) => (
+              <button
+                key={id}
+                onClick={() => handleNavClick(id)}
+                className={`block w-full text-left px-3 py-2 rounded-md text-base font-montserrat-light tracking-wide transition-colors duration-300 ${
+                  activeSection === id
+                    ? 'text-[#FEACC6] bg-[#FEACC6]/10'
+                    : 'text-white hover:text-[#FEACC6] hover:bg-[#FEACC6]/5'
+                }`}
+              >
+                {label}
+              </button>
+            ))}
+            
+            {/* Mobile Consultation Button */}
+            <div className="pt-3 sm:hidden">
+              <button
+                onClick={handleConsultationClick}
+                className="w-full bg-gradient-to-r from-[#FEACC6] to-[#fd7aa3] hover:from-[#fd7aa3] hover:to-[#FEACC6] text-[#112137] px-4 py-3 rounded-full transition-all duration-300 transform hover:scale-105 font-cinzel-medium shadow-lg text-sm"
+              >
+                BOOK CONSULTATION
+              </button>
+            </div>
           </div>
         </div>
-      </div>
+      )}
     </nav>
   );
 };
