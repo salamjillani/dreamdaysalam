@@ -66,7 +66,7 @@ const Navigation = ({ activeSection, scrollToSection, setShowConsultationForm })
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="lg:hidden p-2 rounded-md text-white hover:text-[#FEACC6] focus:outline-none focus:ring-2 focus:ring-[#FEACC6]"
+            className=" p-2 rounded-md text-white hover:text-[#FEACC6] focus:outline-none focus:ring-2 focus:ring-[#FEACC6]"
             aria-label="Toggle navigation menu"
           >
             <svg
@@ -97,7 +97,7 @@ const Navigation = ({ activeSection, scrollToSection, setShowConsultationForm })
 
       {/* Mobile Menu - Simplified visibility logic */}
       {isMobileMenuOpen && (
-        <div className="lg:hidden bg-[#344C6E] border-t border-[#FEACC6]/20 animate-in slide-in-from-top-2 duration-200">
+        <div className=" bg-[#344C6E] border-t border-[#FEACC6]/20 animate-in slide-in-from-top-2 duration-200">
           <div className="px-4 pt-2 pb-4 space-y-1">
             {navigationItems.map(({ id, label }) => (
               <button
