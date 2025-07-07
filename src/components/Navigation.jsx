@@ -125,7 +125,7 @@ const Navigation = ({ activeSection, scrollToSection, setShowConsultationForm })
             ))}
             
             {/* Mobile Consultation Button (only on very small screens) */}
-            <div className="pt-3 sm:hidden">
+            <div className="pt-3">
               <button
                 onClick={handleConsultationClick}
                 className="w-full bg-gradient-to-r from-[#FEACC6] to-[#fd7aa3] hover:from-[#fd7aa3] hover:to-[#FEACC6] text-[#112137] px-4 py-3 rounded-full transition-all duration-300 transform hover:scale-105 font-cinzel-medium shadow-lg text-sm"
