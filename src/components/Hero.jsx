@@ -24,14 +24,18 @@ const Hero = () => {
       "
       style={{
         backgroundImage: 'url("/herodreamday.png")',
-        backgroundSize: 'cover',
+        backgroundSize: 'contain',
         backgroundPosition: 'center center',
         backgroundRepeat: 'no-repeat'
       }}
     >
- 
-      
-    
+      <style jsx>{`
+        @media (min-width: 768px) {
+          #hero {
+            background-size: cover !important;
+          }
+        }
+      `}</style>
     </section>
   );
 };
