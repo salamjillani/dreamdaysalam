@@ -37,9 +37,6 @@ const Navigation = ({ activeSection, scrollToSection, setShowConsultationForm })
                 e.target.nextSibling.style.display = 'block';
               }}
             />
-            <div className="text-lg sm:text-xl md:text-2xl font-cinzel bg-gradient-to-r from-[#FEACC6] to-[#fd7aa3] bg-clip-text text-transparent hidden tracking-wider">
-              DREAMDAY
-            </div>
           </div>
 
           {/* Desktop Navigation */}
@@ -111,7 +108,7 @@ const Navigation = ({ activeSection, scrollToSection, setShowConsultationForm })
 
       {/* Mobile Menu Dropdown */}
       {isMobileMenuOpen && (
-        <div className="lg:hidden bg-[#344C6E] border-t border-[#FEACC6]/20 shadow-lg">
+        <div className=" bg-[#344C6E] border-t border-[#FEACC6]/20 shadow-lg">
           <div className="px-4 pt-2 pb-4 space-y-1">
             {navigationItems.map(({ id, label }) => (
               <button
