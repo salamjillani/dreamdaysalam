@@ -2,7 +2,6 @@ import React from 'react';
 import { CheckCircle } from 'lucide-react';
 
 const PackageCard = ({ pkg, setShowConsultationForm }) => {
-  // Define color schemes for each package
   const colorSchemes = {
     rose: {
       background: 'from-rose-900/20 to-pink-800/30',
@@ -37,7 +36,6 @@ const PackageCard = ({ pkg, setShowConsultationForm }) => {
 
   return (
     <div className={`group relative bg-gradient-to-br ${colors.background} backdrop-blur-md rounded-3xl p-8 border ${colors.border} transition-all duration-700 hover:scale-105 hover:shadow-2xl ${colors.shadowHover} overflow-hidden`}>
-             
       <div className={`absolute inset-0 bg-gradient-to-br ${colors.hoverOverlay} opacity-0 group-hover:opacity-100 transition-opacity duration-700 z-10`}></div>
              
       <div className="relative z-20">

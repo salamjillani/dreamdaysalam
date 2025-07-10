@@ -27,7 +27,6 @@ const App = () => {
   const handleFormSubmit = (e) => {
     e.preventDefault();
     
-    // Basic validation
     if (!formData.name || !formData.email || !formData.phone || !formData.eventType ||
         !formData.eventDate || !formData.budget) {
       alert('Please fill in all required fields.');
@@ -39,10 +38,8 @@ const App = () => {
       return;
     }
     
-    // SQUAREUP INTEGRATION
-    alert('Thank you for your interest! You will be redirected to secure payment processing.');
-    // Replace with your actual SquareUp payment URL
-    window.location.href = 'https://squareup.com/fake_payment_link';
+    localStorage.setItem('consultationFormData', JSON.stringify(formData));
+    window.location.href = 'https://calendly.com/ep-dreamdayeventplanner/30min';
   };
     
   const scrollToSection = (sectionId) => {

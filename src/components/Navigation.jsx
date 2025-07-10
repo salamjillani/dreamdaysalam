@@ -26,7 +26,6 @@ const Navigation = ({ activeSection, scrollToSection, setShowConsultationForm })
     <nav className="fixed top-0 left-0 right-0 z-40 bg-[#344C6E] border-b border-[#FEACC6]/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          {/* Logo Section */}
           <div className="flex items-center flex-shrink-0">
             <img
               src="DreamDay.png"
@@ -39,7 +38,6 @@ const Navigation = ({ activeSection, scrollToSection, setShowConsultationForm })
             />
           </div>
 
-          {/* Desktop Navigation */}
           <div className="hidden lg:flex space-x-6 xl:space-x-8">
             {navigationItems.map(({ id, label }) => (
               <button
@@ -54,7 +52,6 @@ const Navigation = ({ activeSection, scrollToSection, setShowConsultationForm })
             ))}
           </div>
 
-          {/* Desktop Consultation Button */}
           <button
             onClick={() => setShowConsultationForm(true)}
             className="hidden sm:block bg-gradient-to-r from-[#FEACC6] to-[#fd7aa3] hover:from-[#fd7aa3] hover:to-[#FEACC6] text-[#112137] px-4 py-2 sm:px-6 rounded-full transition-all duration-300 transform hover:scale-105 font-cinzel-medium shadow-lg text-xs sm:text-sm md:text-base"
@@ -63,7 +60,6 @@ const Navigation = ({ activeSection, scrollToSection, setShowConsultationForm })
             <span className="md:hidden">BOOK</span>
           </button>
 
-          {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             className="lg:hidden p-2 rounded-md text-white hover:text-[#FEACC6] focus:outline-none focus:ring-2 focus:ring-[#FEACC6]"
@@ -95,7 +91,6 @@ const Navigation = ({ activeSection, scrollToSection, setShowConsultationForm })
         </div>
       </div>
 
-      {/* Mobile Menu */}
       <div
         className={`lg:hidden transition-all duration-300 ease-in-out ${
           isMobileMenuOpen
@@ -118,7 +113,6 @@ const Navigation = ({ activeSection, scrollToSection, setShowConsultationForm })
             </button>
           ))}
           
-          {/* Mobile Consultation Button */}
           <div className="pt-3 sm:hidden">
             <button
               onClick={handleConsultationClick}

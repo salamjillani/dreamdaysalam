@@ -12,7 +12,6 @@ const ConsultationModal = ({
   return (
     <div className="fixed inset-0 bg-gradient-to-br from-[#112137]/90 to-[#1d395e]/90 backdrop-blur-lg z-50 flex items-center justify-center p-4">
       <div className="bg-white rounded-3xl p-8 max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-2xl border border-gray-200">
-     
         <div className="flex justify-between items-center mb-6">
           <h2 className="text-3xl font-cinzel-bold text-[#1d395e]">
             Book Your Exclusive Consultation
@@ -39,7 +38,6 @@ const ConsultationModal = ({
           </div>
         </div>
 
-       
         <div className="mb-6">
           <h4 className="text-lg font-cinzel-semibold text-[#1d395e] mb-4">What's Included:</h4>
           <ul className="space-y-3">
@@ -58,10 +56,8 @@ const ConsultationModal = ({
           </ul>
         </div>
 
-   
         <div className="space-y-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          
             <input
               type="text"
               name="name"
@@ -72,7 +68,6 @@ const ConsultationModal = ({
               className="border-2 border-[#FEACC6] rounded-2xl px-4 py-3 w-full focus:outline-none focus:border-[#fd7aa3] focus:ring-2 focus:ring-[#fd7aa3]/20 transition-all duration-300 bg-white font-sans text-[#112137] placeholder-gray-500"
             />
             
-          
             <input
               type="email"
               name="email"
@@ -83,7 +78,6 @@ const ConsultationModal = ({
               className="border-2 border-[#FEACC6] rounded-2xl px-4 py-3 w-full focus:outline-none focus:border-[#fd7aa3] focus:ring-2 focus:ring-[#fd7aa3]/20 transition-all duration-300 bg-white font-sans text-[#112137] placeholder-gray-500"
             />
             
-          
             <input
               type="tel"
               name="phone"
@@ -94,7 +88,6 @@ const ConsultationModal = ({
               className="border-2 border-[#FEACC6] rounded-2xl px-4 py-3 w-full focus:outline-none focus:border-[#fd7aa3] focus:ring-2 focus:ring-[#fd7aa3]/20 transition-all duration-300 bg-white font-sans text-[#112137] placeholder-gray-500"
             />
             
-  
             <input
               type="text"
               name="eventType"
@@ -115,7 +108,6 @@ const ConsultationModal = ({
               className="border-2 border-[#FEACC6] rounded-2xl px-4 py-3 w-full focus:outline-none focus:border-[#fd7aa3] focus:ring-2 focus:ring-[#fd7aa3]/20 transition-all duration-300 bg-white font-sans text-[#112137] placeholder-gray-500"
             />
             
-      
             <input
               type="number"
               name="budget"
@@ -128,7 +120,6 @@ const ConsultationModal = ({
             />
           </div>
           
-  
           <textarea
             name="description"
             placeholder="Tell us about your dream event..."
@@ -143,7 +134,7 @@ const ConsultationModal = ({
             onClick={handleFormSubmit}
             className="w-full bg-gradient-to-r from-[#fd7aa3] to-[#FEACC6] hover:from-[#FEACC6] hover:to-[#fd7aa3] text-white font-cinzel-semibold py-4 px-6 rounded-2xl transition-all duration-500 transform hover:scale-105 shadow-lg hover:shadow-[#fd7aa3]/30"
           >
-            Proceed to Secure Payment
+            Schedule Consultation
           </button>
         </div>
       </div>

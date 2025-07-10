@@ -1,4 +1,3 @@
-// FinalCTA.jsx
 import React from 'react';
 import { Star, Calendar } from 'lucide-react';
 
