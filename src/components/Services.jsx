@@ -120,7 +120,7 @@ const Services = () => {
     },
     {
       title: "Corporate Events",
-      description: "Corporate, indoor and outdoor, theatres and parks.",
+      description: "Corporate, indoor and outdoor, theatres, parks, tradeshows, grand opening, brand launches, and celebrations.",
       images: [
         { src: "/corporateevents/corporateevents1.jpg" },
         { src: "/corporateevents/corporateevents2.jpg" },
@@ -159,14 +159,12 @@ const Services = () => {
         "We have the tools, decor and effects to curate once in a lifetime experiences, as experts, we can repeat.",
       images: [
         { src: "/customproductions/production1.jpg" },
-        { src: "/customproductions/production2.jpg" },
         { src: "/customproductions/production3.jpg" },
         { src: "/customproductions/production4.jpg" },
         { src: "/customproductions/production5.jpg" },
         { src: "/customproductions/production6.jpg" },
         { src: "/customproductions/production7.jpg" },
-        { src: "/customproductions/production8.jpg" },
-        { src: "/customproductions/production9.jpeg" }
+        { src: "/customproductions/production8.jpg" }
       ],
     },
     {
@@ -179,10 +177,10 @@ const Services = () => {
         { src: "/intimategatherings/intimate3.jpg" },
         { src: "/intimategatherings/intimate4.jpg" },
         { src: "/intimategatherings/intimate6.jpg" },
-        { src: "/intimategatherings/intimate7.jpg" },
+   
         { src: "/intimategatherings/intimate8.png" },
         { src: "/intimategatherings/intimate9.jpeg" },
-        { src: "/intimategatherings/intimate10.jpeg" },
+   
         { src: "/intimategatherings/intimate11.png" },
         { src: "/intimategatherings/intimate12.png" },
         { src: "/intimategatherings/intimate13.png" },
