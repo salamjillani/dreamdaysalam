@@ -172,18 +172,17 @@ const Services = () => {
       description:
         "Proposals, announcements, dinners and baby showers, and children's birthdays.",
       images: [
+        { src: "/intimategatherings/intimate1.png" },
         { src: "/intimategatherings/intimate1.jpg" },
         { src: "/intimategatherings/intimate2.jpg" },
-        { src: "/intimategatherings/intimate3.jpg" },
         { src: "/intimategatherings/intimate4.jpg" },
+        { src: "/intimategatherings/intimate6.png" },
         { src: "/intimategatherings/intimate6.jpg" },
-   
         { src: "/intimategatherings/intimate8.png" },
         { src: "/intimategatherings/intimate9.jpeg" },
-   
-        { src: "/intimategatherings/intimate11.png" },
         { src: "/intimategatherings/intimate12.png" },
         { src: "/intimategatherings/intimate13.png" },
+        { src: "/intimategatherings/intimate13.jpeg" }
       ],
     },
   ];
