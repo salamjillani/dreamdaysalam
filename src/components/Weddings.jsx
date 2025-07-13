@@ -34,9 +34,13 @@ const Weddings = ({ setShowConsultationForm }) => {
       
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 sm:mb-16">
-          <div className="inline-flex p-3 sm:p-4 bg-gradient-to-br from-[#295185] to-[#fd7aa3] rounded-2xl sm:rounded-3xl mb-4 sm:mb-6 shadow-lg">
-            <Heart className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 text-[#112137]" />
-          </div>
+           <div className="inline-flex p-6 rounded-full mb-8 shadow-2xl">
+          <img 
+            src="tree.png" 
+            alt="Tree" 
+            className="w-20 h-20 object-contain"
+          />
+        </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-cinzel-bold text-white mb-4 sm:mb-6 px-2">
             Weddings
           </h2>
