@@ -25,20 +25,16 @@ const Hero = () => {
         md:px-8 
         lg:px-12 
         xl:px-16 
-        2xl:px-20 
+        2xl:px-20
         
-        /* Responsive min-height for different devices */
-        sm:min-h-[100vh] 
-        md:min-h-[110vh] 
-        lg:min-h-[120vh] 
-        xl:min-h-[130vh] 
-        2xl:min-h-[140vh]
+        /* Responsive background size */
+        bg-contain
+        md:bg-cover
       "
       style={{
         backgroundImage: 'url("/herodreamday.png")',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center center',
-        backgroundRepeat: 'no-repeat'
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
       }}
     >
       {/* Your content will go here */}
