@@ -1,4 +1,3 @@
-// Social.jsx
 import React from 'react';
 import { Gift } from 'lucide-react';
 import PackageCard from './PackageCard';
@@ -10,21 +9,21 @@ const Social = ({ setShowConsultationForm }) => {
       price: '$2,000',
       description: 'Birthdays, showers, intimate events',
       features: ['Intimate settings', 'Personalized themes', 'Guest coordination', 'Photography coordination'],
-      colorScheme: 'rose' // Rose theme for first package
+      colorScheme: 'rose'
     },
     {
       name: 'Lavish Affair',
       price: '$4,500',
       description: 'Milestone events, luxury rentals',
       features: ['Milestone celebrations', 'Luxury rentals', 'Premium vendors', 'Custom décor'],
-      colorScheme: 'purple' // Purple theme for second package
+      colorScheme: 'purple'
     },
     {
       name: 'Signature Soiree',
       price: '$7,000',
       description: 'Custom-themed social events',
       features: ['Custom themes', 'Unique experiences', 'Entertainment coordination', 'VIP treatment'],
-      colorScheme: 'gold' // Gold theme for third package
+      colorScheme: 'gold'
     }
   ];
 
@@ -34,13 +33,13 @@ const Social = ({ setShowConsultationForm }) => {
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 sm:mb-16">
-           <div className="inline-flex p-6 rounded-full mb-8 shadow-2xl">
-          <img 
-            src="tree.png" 
-            alt="Tree" 
-            className="w-20 h-20 object-contain"
-          />
-        </div>
+          <div className="inline-flex p-6 rounded-full mb-8 shadow-2xl">
+            <img 
+              src="tree.png" 
+              alt="Tree" 
+              className="w-20 h-20 object-contain"
+            />
+          </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-cinzel-bold text-white mb-4 sm:mb-6 px-2">
             Social Celebrations
           </h2>
@@ -60,11 +59,6 @@ const Social = ({ setShowConsultationForm }) => {
           ))}
         </div>
       </div>
-      
-      {/* Responsive background decorations */}
-      <div className="absolute top-16 sm:top-20 left-4 sm:left-10 w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br from-[#FEACC6]/20 to-[#fd7aa3]/15 rounded-full"></div>
-      <div className="absolute bottom-16 sm:bottom-20 right-4 sm:right-10 w-24 h-24 sm:w-32 sm:h-32 bg-gradient-to-br from-[#ffdee9]/20 to-[#FEACC6]/15 rounded-full"></div>
-      <div className="absolute top-1/2 left-1/4 w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-[#fd7aa3]/20 to-[#295185]/15 rounded-full"></div>
     </section>
   );
 };

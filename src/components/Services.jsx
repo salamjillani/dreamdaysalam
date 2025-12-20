@@ -4,7 +4,6 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 const ImageCarousel = ({ images, title, description }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // Auto-advance images every 3 seconds
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
@@ -51,7 +50,6 @@ const ImageCarousel = ({ images, title, description }) => {
             ))}
           </div>
 
-          {/* Navigation Buttons */}
           <button
             onClick={prevSlide}
             className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full transition-all duration-200 hover:scale-110"
@@ -67,7 +65,6 @@ const ImageCarousel = ({ images, title, description }) => {
           </button>
         </div>
 
-        {/* Dots Indicator */}
         <div className="flex justify-center mt-6 space-x-2">
           {images.map((_, index) => (
             <button
@@ -114,8 +111,6 @@ const Services = () => {
         { src: "/exclusivevenues/venue26.jpg" },
         { src: "/exclusivevenues/venue27.jpg" },
         { src: "/exclusivevenues/venue28.jpg" }
-
- 
       ],
     },
     {
@@ -134,7 +129,6 @@ const Services = () => {
         { src: "/corporateevents/corporateevents11.png" },
         { src: "/corporateevents/corporateevents15.png" },
         { src: "/corporateevents/corporateevents16.jpg" }
-
       ],
     },
     {
@@ -189,15 +183,7 @@ const Services = () => {
 
   return (
     <section id="services" className="py-20 px-4 relative overflow-hidden">
-      {/* Background gradient matching Hero section */}
       <div className="absolute inset-0 bg-gradient-to-br from-[#295185]/20 via-[#fd7aa3]/5 to-[#FEACC6]/10"></div>
-
-      {/* Floating bubble elements */}
-      <div className="absolute top-20 left-10 w-20 h-20 bg-gradient-to-br from-[#FEACC6]/20 to-[#fd7aa3]/15 rounded-full"></div>
-      <div className="absolute bottom-20 right-10 w-32 h-32 bg-gradient-to-br from-[#ffdee9]/20 to-[#FEACC6]/15 rounded-full"></div>
-      <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-gradient-to-br from-[#fd7aa3]/20 to-[#295185]/15 rounded-full"></div>
-      <div className="absolute top-1/3 right-1/4 w-24 h-24 bg-gradient-to-br from-[#FEACC6]/15 to-[#ffdee9]/20 rounded-full"></div>
-      <div className="absolute bottom-1/3 left-1/3 w-18 h-18 bg-gradient-to-br from-[#295185]/15 to-[#fd7aa3]/20 rounded-full"></div>
 
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="text-center mb-16">
