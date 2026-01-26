@@ -83,7 +83,7 @@ const App = () => {
   }, [handleScroll]);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#112137] via-[#1d395e] to-[#295185]">
+    <div className="min-h-screen bg-[#002D67]">
       <Navigation 
         activeSection={activeSection}
         scrollToSection={scrollToSection}

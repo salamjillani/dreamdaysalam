@@ -23,7 +23,7 @@ const Navigation = ({ activeSection, scrollToSection, setShowConsultationForm })
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-40 bg-[#344C6E] border-b border-[#FEACC6]/20">
+    <nav className="fixed top-0 left-0 right-0 z-40 bg-[#002D67] border-b border-[#FEACC6]/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center flex-shrink-0">
@@ -54,7 +54,7 @@ const Navigation = ({ activeSection, scrollToSection, setShowConsultationForm })
 
           <button
             onClick={() => setShowConsultationForm(true)}
-            className="hidden sm:block bg-gradient-to-r from-[#FEACC6] to-[#fd7aa3] hover:from-[#fd7aa3] hover:to-[#FEACC6] text-[#112137] px-4 py-2 sm:px-6 rounded-full transition-all duration-300 transform hover:scale-105 font-cinzel-medium shadow-lg text-xs sm:text-sm md:text-base"
+            className="hidden sm:block bg-gradient-to-r from-[#FEACC6] to-[#fd7aa3] hover:from-[#fd7aa3] hover:to-[#FEACC6] text-[#002D67] px-4 py-2 sm:px-6 rounded-full transition-all duration-300 transform hover:scale-105 font-cinzel-medium shadow-lg text-xs sm:text-sm md:text-base"
           >
             <span className="hidden md:inline">BOOK CONSULTATION</span>
             <span className="md:hidden">BOOK</span>
@@ -98,7 +98,7 @@ const Navigation = ({ activeSection, scrollToSection, setShowConsultationForm })
             : 'max-h-0 opacity-0 invisible'
         }`}
       >
-        <div className="px-4 pt-2 pb-4 space-y-1 bg-[#344C6E] border-t border-[#FEACC6]/20">
+        <div className="px-4 pt-2 pb-4 space-y-1 bg-[#002D67] border-t border-[#FEACC6]/20">
           {navigationItems.map(({ id, label }) => (
             <button
               key={id}
@@ -116,7 +116,7 @@ const Navigation = ({ activeSection, scrollToSection, setShowConsultationForm })
           <div className="pt-3 sm:hidden">
             <button
               onClick={handleConsultationClick}
-              className="w-full bg-gradient-to-r from-[#FEACC6] to-[#fd7aa3] hover:from-[#fd7aa3] hover:to-[#FEACC6] text-[#112137] px-4 py-3 rounded-full transition-all duration-300 transform hover:scale-105 font-cinzel-medium shadow-lg text-sm"
+              className="w-full bg-gradient-to-r from-[#FEACC6] to-[#fd7aa3] hover:from-[#fd7aa3] hover:to-[#FEACC6] text-[#002D67] px-4 py-3 rounded-full transition-all duration-300 transform hover:scale-105 font-cinzel-medium shadow-lg text-sm"
             >
               BOOK CONSULTATION
             </button>
