@@ -32,7 +32,7 @@ const Hero = () => {
         md:bg-cover
         
         /* Background color matching the water */
-        bg-[#002D67]
+        bg-[#003151]
       "
       style={{
         backgroundImage: 'url("/herodreamday.png")',
@@ -40,6 +40,9 @@ const Hero = () => {
         backgroundRepeat: 'no-repeat',
       }}
     >
+      {/* Subtle gradient overlay at bottom for smooth transition */}
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-b from-transparent via-[#002D67]/30 to-[#002D67] pointer-events-none"></div>
+      
       {/* Your content will go here */}
     </section>
   );

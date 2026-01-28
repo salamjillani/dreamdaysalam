@@ -83,7 +83,7 @@ const App = () => {
   }, [handleScroll]);
 
   return (
-    <div className="min-h-screen bg-[#002D67]">
+    <div className="min-h-screen bg-[#003151]">
       <Navigation 
         activeSection={activeSection}
         scrollToSection={scrollToSection}
