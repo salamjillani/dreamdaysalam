@@ -32,7 +32,7 @@ const Hero = () => {
         md:bg-cover
         
         /* Background color matching the water */
-        bg-[#003151]
+        bg-[#051527]
       "
       style={{
         backgroundImage: 'url("/herodreamday.png")',
