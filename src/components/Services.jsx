@@ -182,7 +182,7 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="py-20 px-4 relative overflow-hidden bg-[#0F2C5F]">
+    <section id="services" className="py-20 px-4 relative overflow-hidden bg-[#05172A]">
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-5xl md:text-6xl font-cinzel-bold bg-gradient-to-r from-white via-[#ffdee9] to-[#FEACC6] bg-clip-text text-transparent mb-6">

@@ -23,7 +23,7 @@ const Navigation = ({ activeSection, scrollToSection, setShowConsultationForm })
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-40 bg-[#0F2C5F] border-b border-[#FEACC6]/20">
+    <nav className="fixed top-0 left-0 right-0 z-40 bg-[#05172A] border-b border-[#FEACC6]/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center flex-shrink-0">
@@ -98,7 +98,7 @@ const Navigation = ({ activeSection, scrollToSection, setShowConsultationForm })
             : 'max-h-0 opacity-0 invisible'
         }`}
       >
-        <div className="px-4 pt-2 pb-4 space-y-1 bg-[#0F2C5F] border-t border-[#FEACC6]/20">
+        <div className="px-4 pt-2 pb-4 space-y-1 bg-[#05172A] border-t border-[#FEACC6]/20">
           {navigationItems.map(({ id, label }) => (
             <button
               key={id}

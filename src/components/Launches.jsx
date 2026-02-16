@@ -28,7 +28,7 @@ const Launches = ({ setShowConsultationForm }) => {
   ];
 
   return (
-    <section id="launches" className="py-12 sm:py-16 md:py-20 lg:py-24 relative overflow-hidden bg-[#0F2C5F]">
+    <section id="launches" className="py-12 sm:py-16 md:py-20 lg:py-24 relative overflow-hidden bg-[#05172A]">
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 sm:mb-16 lg:mb-20">
           <div className="inline-flex p-6 rounded-full mb-8 shadow-2xl">

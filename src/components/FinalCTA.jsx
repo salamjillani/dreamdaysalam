@@ -3,7 +3,7 @@ import { Calendar } from 'lucide-react';
 
 const FinalCTA = ({ setShowConsultationForm }) => {
   return (
-    <section className="py-20 relative bg-[#0F2C5F]">
+    <section className="py-20 relative bg-[#05172A]">
       <div className="relative z-10 max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
         <div className="inline-flex p-6 rounded-full mb-8 shadow-2xl">
           <img 
