@@ -28,7 +28,7 @@ const Navigation = ({ activeSection, scrollToSection, setShowConsultationForm })
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center flex-shrink-0">
             <img
-              src="DreamDay.png"
+              src="dreamday.webp"
               alt="DreamDay Logo"
               className="h-10 w-auto sm:h-12 md:h-14"
               onError={(e) => {
