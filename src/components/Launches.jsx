@@ -39,7 +39,7 @@ const Launches = ({ setShowConsultationForm }) => {
             />
           </div>
           
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-cinzel-bold text-white mb-4 sm:mb-6 px-2 leading-tight">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-cinzel-bold bg-gradient-to-r from-[#FEACC6] to-[#fd7aa3] bg-clip-text text-transparent mb-4 sm:mb-6 px-2 leading-tight">
             Brand, Product, and Service Launches
           </h2>
           

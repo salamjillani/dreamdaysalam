@@ -38,7 +38,7 @@ const Social = ({ setShowConsultationForm }) => {
               className="w-20 h-20 object-contain"
             />
           </div>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-cinzel-bold text-white mb-4 sm:mb-6 px-2">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-cinzel-bold bg-gradient-to-r from-[#FEACC6] to-[#fd7aa3] bg-clip-text text-transparent mb-4 sm:mb-6 px-2">
             Social Celebrations
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-[#ffdee9] max-w-3xl mx-auto leading-relaxed font-montserrat-light px-4 sm:px-6">

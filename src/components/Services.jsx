@@ -25,7 +25,7 @@ const ImageCarousel = ({ images, title, description }) => {
   return (
     <div className="mb-16">
       <div className="text-center mb-8">
-        <h3 className="text-2xl md:text-3xl font-cinzel-semibold text-white mb-4">
+        <h3 className="text-2xl md:text-3xl font-cinzel-semibold bg-gradient-to-r from-[#FEACC6] to-[#fd7aa3] bg-clip-text text-transparent mb-4">
           {title}
         </h3>
         <p className="text-lg text-[#ffdee9] max-w-3xl mx-auto leading-relaxed font-montserrat-light">

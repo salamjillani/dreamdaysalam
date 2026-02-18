@@ -12,7 +12,7 @@ const FinalCTA = ({ setShowConsultationForm }) => {
             className="w-20 h-20 object-contain"
           />
         </div>
-        <h2 className="text-3xl md:text-4xl font-cinzel-bold text-white mb-8 leading-tight">
+        <h2 className="text-3xl md:text-4xl font-cinzel-bold bg-gradient-to-r from-[#FEACC6] to-[#fd7aa3] bg-clip-text text-transparent mb-8 leading-tight">
           Host an unforgettable event with DreamDay Event Planning and Management
         </h2>
         <button
