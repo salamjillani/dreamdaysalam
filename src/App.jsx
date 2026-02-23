@@ -2,6 +2,7 @@ import React, { useState, useEffect, useCallback } from 'react';
 import Navigation from './components/Navigation';
 import Hero from './components/Hero';
 import Weddings from './components/Weddings';
+import Childcare from './components/Childcare';
 import Corporate from './components/Corporate';
 import Social from './components/Social';
 import Launches from './components/Launches';
@@ -50,7 +51,7 @@ const App = () => {
   };
   
   const handleScroll = useCallback(() => {
-    const sections = ['hero', 'weddings', 'services', 'corporate', 'social', 'launches'];
+    const sections = ['hero', 'weddings', 'childcare', 'services', 'corporate', 'social', 'launches'];
     const scrollPosition = window.scrollY + 100;
 
     for (const section of sections) {
@@ -92,6 +93,7 @@ const App = () => {
       <Hero scrollToSection={scrollToSection} />
       <Services setShowConsultationForm={setShowConsultationForm} />
       <Weddings setShowConsultationForm={setShowConsultationForm} />
+      <Childcare setShowConsultationForm={setShowConsultationForm} />
       <Corporate setShowConsultationForm={setShowConsultationForm} />
       <Social setShowConsultationForm={setShowConsultationForm} />
       <Launches setShowConsultationForm={setShowConsultationForm} />
