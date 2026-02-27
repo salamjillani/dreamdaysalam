@@ -6,6 +6,7 @@ const Hero = () => {
         min-h-screen 
         w-full 
         flex 
+        flex-col
         items-center 
         justify-center 
         relative 
@@ -43,7 +44,26 @@ const Hero = () => {
       {/* Subtle gradient overlay at bottom for smooth transition */}
       <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-b from-transparent via-[#002D67]/30 to-[#002D67] pointer-events-none"></div>
       
-      {/* Your content will go here */}
+      {/* CTA Button */}
+      <div className="relative z-10 mt-auto mb-16 sm:mb-20 flex items-center justify-center">
+        <a
+          href="https://calendly.com/ep-dreamdayeventplanner/30min"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block px-12 py-4 rounded-lg transition-all duration-300 hover:scale-105 hover:brightness-110"
+          style={{
+            background: 'linear-gradient(180deg, #E6C77A 0%, #C8A24A 55%, #A67C2E 100%)',
+            color: '#002D67',
+            fontFamily: 'Cinzel, serif',
+            fontSize: '1.2rem',
+            fontWeight: 'bold',
+            letterSpacing: '0.05em',
+            boxShadow: '0 2px 16px rgba(200,162,74,0.4)',
+          }}
+        >
+          Reserve Your DreamDay Date
+        </a>
+      </div>
     </section>
   );
 };
