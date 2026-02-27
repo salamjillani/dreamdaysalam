@@ -37,7 +37,7 @@ const Hero = () => {
       <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-b from-transparent via-[#002D67]/30 to-[#002D67] pointer-events-none"></div>
 
       {/* CTA Button */}
-      <div className="relative z-10 mt-[38vw] sm:mt-[30vw] md:mt-auto md:mb-16 flex items-center justify-center w-full">
+      <div className="relative z-10 mt-[34vw] sm:mt-[30vw] md:mt-auto md:mb-16 flex items-center justify-center w-full">
         <a
           href="https://calendly.com/ep-dreamdayeventplanner/30min"
           target="_blank"
