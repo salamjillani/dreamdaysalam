@@ -1,11 +1,14 @@
-import { CheckCircle } from 'lucide-react';
+import { CheckCircle } from "lucide-react";
 
-const ConsultationModal = ({ 
-  showConsultationForm, 
-  setShowConsultationForm, 
-  formData, 
-  setFormData, 
-  handleFormSubmit 
+const PAY_RETAINER_URL =
+  "https://checkout.square.site/merchant/ML0CNWSRJ0WDX/checkout/3KOOVFHQJR5FJ6L4AU7GPYDC";
+
+const ConsultationModal = ({
+  showConsultationForm,
+  setShowConsultationForm,
+  formData,
+  setFormData,
+  handleFormSubmit,
 }) => {
   if (!showConsultationForm) return null;
 
@@ -16,41 +19,58 @@ const ConsultationModal = ({
           <h2 className="text-3xl font-cinzel-bold text-[#002D67]">
             Book Your Exclusive Consultation
           </h2>
-          <button 
-            onClick={() => setShowConsultationForm(false)}
-            className="text-[#002D67] hover:text-[#fd7aa3] text-3xl font-bold transition-colors duration-300"
-          >
-            ×
-          </button>
+          <div className="flex items-center gap-3">
+            <a
+              href={PAY_RETAINER_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-gradient-to-r from-[#C9A84C] to-[#F0D080] hover:from-[#F0D080] hover:to-[#C9A84C] text-[#05172A] font-cinzel-semibold px-4 py-2 rounded-full transition-all duration-300 transform hover:scale-105 shadow-md text-xs tracking-widest whitespace-nowrap"
+            >
+              PAY RETAINER
+            </a>
+            <button
+              onClick={() => setShowConsultationForm(false)}
+              className="text-[#002D67] hover:text-[#fd7aa3] text-3xl font-bold transition-colors duration-300 leading-none"
+            >
+              ×
+            </button>
+          </div>
         </div>
-    
+
         <div className="mb-6">
           <h3 className="text-xl font-cinzel-semibold text-[#fd7aa3] mb-3">
             Live Your Dream. Every Detail. Perfectly Planned.
           </h3>
           <p className="text-[#002D67] mb-4 leading-relaxed font-montserrat-light">
-            Embark on a journey to your perfect event with a personal consultation with Eboniece Perry, 
-            the principal planner at DreamDay. This session is designed to help shape your event into 
-            a meticulously crafted experience that aligns with your unique vision.
+            Embark on a journey to your perfect event with a personal
+            consultation with Eboniece Perry, the principal planner at DreamDay.
+            This session is designed to help shape your event into a
+            meticulously crafted experience that aligns with your unique vision.
           </p>
           <div className="bg-gradient-to-r from-[#ffdee9] to-[#FEACC6]/50 p-4 rounded-2xl mb-4 border border-[#fd7aa3]/30">
-            <p className="text-[#002D67] font-cinzel-semibold">Minimum Budget: $3,000</p>
+            <p className="text-[#002D67] font-cinzel-semibold">
+              Minimum Budget: $3,000
+            </p>
           </div>
         </div>
 
         <div className="mb-6">
-          <h4 className="text-lg font-cinzel-semibold text-[#002D67] mb-4">What's Included:</h4>
+          <h4 className="text-lg font-cinzel-semibold text-[#002D67] mb-4">
+            What's Included:
+          </h4>
           <ul className="space-y-3">
             {[
-              'Brainstorming Session: A deep dive into your vision, preferences, and event specifics',
-              'Taste Testing Day: Sample exquisite flavors for your culinary offerings',
-              'Palette and Theme Review: Explore color schemes and themes for the perfect ambiance',
-              'Venue Scouting: Evaluate potential venues for your ideal setting',
-              'Special Guests and Activities: Plan engaging entertainment to enchant your guests'
+              "Brainstorming Session: A deep dive into your vision, preferences, and event specifics",
+              "Taste Testing Day: Sample exquisite flavors for your culinary offerings",
+              "Palette and Theme Review: Explore color schemes and themes for the perfect ambiance",
+              "Venue Scouting: Evaluate potential venues for your ideal setting",
+              "Special Guests and Activities: Plan engaging entertainment to enchant your guests",
             ].map((item, idx) => (
               <li key={idx} className="flex items-start">
                 <CheckCircle className="w-5 h-5 text-[#fd7aa3] mr-3 mt-0.5 flex-shrink-0" />
-                <span className="text-[#002D67] font-montserrat-light">{item}</span>
+                <span className="text-[#002D67] font-montserrat-light">
+                  {item}
+                </span>
               </li>
             ))}
           </ul>
@@ -63,72 +83,81 @@ const ConsultationModal = ({
               name="name"
               placeholder="Your Name"
               value={formData.name}
-              onChange={e => setFormData({ ...formData, name: e.target.value })}
+              onChange={(e) =>
+                setFormData({ ...formData, name: e.target.value })
+              }
               required
               className="border-2 border-[#FEACC6] rounded-2xl px-4 py-3 w-full focus:outline-none focus:border-[#fd7aa3] focus:ring-2 focus:ring-[#fd7aa3]/20 transition-all duration-300 bg-white font-sans text-[#002D67] placeholder-gray-500"
             />
-            
             <input
               type="email"
               name="email"
               placeholder="Your Email"
               value={formData.email}
-              onChange={e => setFormData({ ...formData, email: e.target.value })}
+              onChange={(e) =>
+                setFormData({ ...formData, email: e.target.value })
+              }
               required
               className="border-2 border-[#FEACC6] rounded-2xl px-4 py-3 w-full focus:outline-none focus:border-[#fd7aa3] focus:ring-2 focus:ring-[#fd7aa3]/20 transition-all duration-300 bg-white font-sans text-[#002D67] placeholder-gray-500"
             />
-            
             <input
               type="tel"
               name="phone"
               placeholder="Your Phone"
               value={formData.phone}
-              onChange={e => setFormData({ ...formData, phone: e.target.value })}
+              onChange={(e) =>
+                setFormData({ ...formData, phone: e.target.value })
+              }
               required
               className="border-2 border-[#FEACC6] rounded-2xl px-4 py-3 w-full focus:outline-none focus:border-[#fd7aa3] focus:ring-2 focus:ring-[#fd7aa3]/20 transition-all duration-300 bg-white font-sans text-[#002D67] placeholder-gray-500"
             />
-            
             <input
               type="text"
               name="eventType"
               placeholder="Event Type (Wedding, Corporate, etc.)"
               value={formData.eventType}
-              onChange={e => setFormData({ ...formData, eventType: e.target.value })}
+              onChange={(e) =>
+                setFormData({ ...formData, eventType: e.target.value })
+              }
               required
               className="border-2 border-[#FEACC6] rounded-2xl px-4 py-3 w-full focus:outline-none focus:border-[#fd7aa3] focus:ring-2 focus:ring-[#fd7aa3]/20 transition-all duration-300 bg-white font-sans text-[#002D67] placeholder-gray-500"
             />
-            
             <input
               type="date"
               name="eventDate"
               placeholder="Event Date"
               value={formData.eventDate}
-              onChange={e => setFormData({ ...formData, eventDate: e.target.value })}
+              onChange={(e) =>
+                setFormData({ ...formData, eventDate: e.target.value })
+              }
               required
               className="border-2 border-[#FEACC6] rounded-2xl px-4 py-3 w-full focus:outline-none focus:border-[#fd7aa3] focus:ring-2 focus:ring-[#fd7aa3]/20 transition-all duration-300 bg-white font-sans text-[#002D67] placeholder-gray-500"
             />
-            
             <input
               type="number"
               name="budget"
               placeholder="Estimated Budget"
               value={formData.budget}
-              onChange={e => setFormData({ ...formData, budget: e.target.value })}
+              onChange={(e) =>
+                setFormData({ ...formData, budget: e.target.value })
+              }
               required
               min={3000}
               className="border-2 border-[#FEACC6] rounded-2xl px-4 py-3 w-full focus:outline-none focus:border-[#fd7aa3] focus:ring-2 focus:ring-[#fd7aa3]/20 transition-all duration-300 bg-white font-sans text-[#002D67] placeholder-gray-500"
             />
           </div>
-          
+
           <textarea
             name="description"
             placeholder="Tell us about your dream event..."
             value={formData.description}
-            onChange={e => setFormData({ ...formData, description: e.target.value })}
+            onChange={(e) =>
+              setFormData({ ...formData, description: e.target.value })
+            }
             rows={4}
             className="border-2 border-[#FEACC6] rounded-2xl px-4 py-3 w-full focus:outline-none focus:border-[#fd7aa3] focus:ring-2 focus:ring-[#fd7aa3]/20 transition-all duration-300 bg-white font-sans text-[#002D67] placeholder-gray-500"
           />
-          
+
           <button
             type="submit"
             onClick={handleFormSubmit}
@@ -136,6 +165,14 @@ const ConsultationModal = ({
           >
             Schedule Consultation
           </button>
+          <a
+            href={PAY_RETAINER_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block w-full text-center bg-gradient-to-r from-[#C9A84C] to-[#F0D080] hover:from-[#F0D080] hover:to-[#C9A84C] text-[#05172A] font-cinzel-semibold py-4 px-6 rounded-2xl transition-all duration-500 transform hover:scale-105 shadow-lg"
+          >
+            PAY RETAINER
+          </a>
         </div>
       </div>
     </div>

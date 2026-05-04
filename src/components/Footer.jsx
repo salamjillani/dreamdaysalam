@@ -1,6 +1,8 @@
 import React from 'react';
 import { Phone, Mail, MapPin } from 'lucide-react';
 
+const PAY_RETAINER_URL = 'https://checkout.square.site/merchant/ML0CNWSRJ0WDX/checkout/3KOOVFHQJR5FJ6L4AU7GPYDC';
+
 const Footer = () => {
   return (
     <footer className="bg-[#05172A] backdrop-blur-md py-12 border-t border-[#FEACC6]/20">
@@ -9,7 +11,7 @@ const Footer = () => {
           <div>
             <h3 className="text-2xl font-cinzel-bold bg-gradient-to-r from-[#FEACC6] to-[#fd7aa3] bg-clip-text text-transparent mb-4">DREAMDAY</h3>
             <p className="text-[#ffdee9]/80 leading-relaxed font-montserrat-light">
-              Every Detail, Perfectly Planned. Creating unforgettable experiences 
+              Every Detail, Perfectly Planned. Creating unforgettable experiences
               that exceed expectations and honor your unique story.
             </p>
           </div>
@@ -46,9 +48,18 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="border-t border-[#FEACC6]/20 mt-8 pt-8 text-center">
-          <p className="text-[#ffdee9]/60 bg-gradient-to-r from-[#ffdee9]/60 to-[#FEACC6]/60 bg-clip-text text-transparent font-montserrat-light">
-            &copy; 2025 DreamDay Event Planning. All rights reserved.
+
+        <div className="border-t border-[#FEACC6]/20 mt-8 pt-8 flex flex-col items-center gap-4">
+          <a
+            href={PAY_RETAINER_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-gradient-to-r from-[#C9A84C] to-[#F0D080] hover:from-[#F0D080] hover:to-[#C9A84C] text-[#05172A] font-cinzel-semibold px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg text-sm tracking-widest"
+          >
+            PAY RETAINER
+          </a>
+          <p className="text-[#ffdee9]/60 bg-gradient-to-r from-[#ffdee9]/60 to-[#FEACC6]/60 bg-clip-text text-transparent font-montserrat-light text-center">
+            &copy; 2026 DreamDay Event Planning. All rights reserved.
           </p>
         </div>
       </div>

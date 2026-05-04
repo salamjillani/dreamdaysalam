@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 
+const PAY_RETAINER_URL = 'https://checkout.square.site/merchant/ML0CNWSRJ0WDX/checkout/3KOOVFHQJR5FJ6L4AU7GPYDC';
+
 const Navigation = ({ activeSection, scrollToSection, setShowConsultationForm }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -52,39 +54,36 @@ const Navigation = ({ activeSection, scrollToSection, setShowConsultationForm })
             ))}
           </div>
 
-          <button
-            onClick={() => setShowConsultationForm(true)}
-            className="hidden sm:block bg-gradient-to-r from-[#FEACC6] to-[#fd7aa3] hover:from-[#fd7aa3] hover:to-[#FEACC6] text-[#002D67] px-4 py-2 sm:px-6 rounded-full transition-all duration-300 transform hover:scale-105 font-cinzel-medium shadow-lg text-xs sm:text-sm md:text-base"
-          >
-            <span className="hidden md:inline">BOOK CONSULTATION</span>
-            <span className="md:hidden">BOOK</span>
-          </button>
+          <div className="hidden sm:flex items-center gap-3">
+            <button
+              onClick={() => setShowConsultationForm(true)}
+              className="bg-gradient-to-r from-[#FEACC6] to-[#fd7aa3] hover:from-[#fd7aa3] hover:to-[#FEACC6] text-[#002D67] px-4 py-2 sm:px-6 rounded-full transition-all duration-300 transform hover:scale-105 font-cinzel-medium shadow-lg text-xs sm:text-sm md:text-base"
+            >
+              <span className="hidden md:inline">BOOK CONSULTATION</span>
+              <span className="md:hidden">BOOK</span>
+            </button>
+
+            <a
+              href={PAY_RETAINER_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-gradient-to-r from-[#C9A84C] to-[#F0D080] hover:from-[#F0D080] hover:to-[#C9A84C] text-[#05172A] px-4 py-2 sm:px-6 rounded-full transition-all duration-300 transform hover:scale-105 font-cinzel-medium shadow-lg text-xs sm:text-sm md:text-base whitespace-nowrap"
+            >
+              <span className="hidden md:inline">PAY RETAINER</span>
+              <span className="md:hidden">PAY</span>
+            </a>
+          </div>
 
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             className="lg:hidden p-2 rounded-md text-white hover:text-[#FEACC6] focus:outline-none focus:ring-2 focus:ring-[#FEACC6]"
             aria-label="Toggle navigation menu"
           >
-            <svg
-              className="h-6 w-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
+            <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               {isMobileMenuOpen ? (
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M6 18L18 6M6 6l12 12"
-                />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
               ) : (
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
               )}
             </svg>
           </button>
@@ -93,9 +92,7 @@ const Navigation = ({ activeSection, scrollToSection, setShowConsultationForm })
 
       <div
         className={`lg:hidden transition-all duration-300 ease-in-out ${
-          isMobileMenuOpen
-            ? 'max-h-screen opacity-100 visible'
-            : 'max-h-0 opacity-0 invisible'
+          isMobileMenuOpen ? 'max-h-screen opacity-100 visible' : 'max-h-0 opacity-0 invisible'
         }`}
       >
         <div className="px-4 pt-2 pb-4 space-y-1 bg-[#05172A] border-t border-[#FEACC6]/20">
@@ -112,14 +109,22 @@ const Navigation = ({ activeSection, scrollToSection, setShowConsultationForm })
               {label}
             </button>
           ))}
-          
-          <div className="pt-3 sm:hidden">
+
+          <div className="pt-3 flex flex-col gap-2 sm:hidden">
             <button
               onClick={handleConsultationClick}
-              className="w-full bg-gradient-to-r from-[#FEACC6] to-[#fd7aa3] hover:from-[#fd7aa3] hover:to-[#FEACC6] text-[#002D67] px-4 py-3 rounded-full transition-all duration-300 transform hover:scale-105 font-cinzel-medium shadow-lg text-sm"
+              className="w-full bg-gradient-to-r from-[#FEACC6] to-[#fd7aa3] hover:from-[#fd7aa3] hover:to-[#FEACC6] text-[#002D67] px-4 py-3 rounded-full transition-all duration-300 font-cinzel-medium shadow-lg text-sm"
             >
               BOOK CONSULTATION
             </button>
+            <a
+              href={PAY_RETAINER_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full text-center bg-gradient-to-r from-[#C9A84C] to-[#F0D080] hover:from-[#F0D080] hover:to-[#C9A84C] text-[#05172A] px-4 py-3 rounded-full transition-all duration-300 font-cinzel-medium shadow-lg text-sm"
+            >
+              PAY RETAINER
+            </a>
           </div>
         </div>
       </div>
