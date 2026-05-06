@@ -6,7 +6,7 @@ const Social = ({ setShowConsultationForm }) => {
   const packages = [
     {
       name: 'Chic Gathering',
-      price: '$2,000',
+      price: '$3,000',
       description: 'Birthdays, showers, intimate events',
       features: ['Intimate settings', 'Personalized themes', 'Guest coordination', 'Photography coordination'],
       colorScheme: 'rose'

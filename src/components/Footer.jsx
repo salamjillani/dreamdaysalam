@@ -3,7 +3,14 @@ import { Phone, Mail, MapPin } from 'lucide-react';
 
 const PAY_RETAINER_URL = 'https://checkout.square.site/merchant/ML0CNWSRJ0WDX/checkout/3KOOVFHQJR5FJ6L4AU7GPYDC';
 
-const Footer = () => {
+const Footer = ({ scrollToSection }) => {
+  const services = [
+    { label: 'Wedding Planning', id: 'weddings' },
+    { label: 'Corporate Events', id: 'corporate' },
+    { label: 'Social Celebrations', id: 'social' },
+    { label: 'Brand Launches', id: 'launches' },
+  ];
+
   return (
     <footer className="bg-[#05172A] backdrop-blur-md py-12 border-t border-[#FEACC6]/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -18,10 +25,16 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-cinzel-semibold text-white mb-4">Services</h4>
             <ul className="space-y-2 text-[#ffdee9]/70">
-              <li className="hover:text-[#FEACC6] transition-colors duration-300 font-montserrat-light">Wedding Planning</li>
-              <li className="hover:text-[#FEACC6] transition-colors duration-300 font-montserrat-light">Corporate Events</li>
-              <li className="hover:text-[#FEACC6] transition-colors duration-300 font-montserrat-light">Social Celebrations</li>
-              <li className="hover:text-[#FEACC6] transition-colors duration-300 font-montserrat-light">Brand Launches</li>
+              {services.map(({ label, id }) => (
+                <li key={id}>
+                  <button
+                    onClick={() => scrollToSection(id)}
+                    className="hover:text-[#FEACC6] transition-colors duration-300 font-montserrat-light text-left"
+                  >
+                    {label}
+                  </button>
+                </li>
+              ))}
             </ul>
           </div>
           <div>
@@ -59,7 +72,7 @@ const Footer = () => {
             PAY RETAINER
           </a>
           <p className="text-[#ffdee9]/60 bg-gradient-to-r from-[#ffdee9]/60 to-[#FEACC6]/60 bg-clip-text text-transparent font-montserrat-light text-center">
-            &copy; 2026 DreamDay Event Planning. All rights reserved.
+            &copy; 2026 DreamDay Event Planner. All rights reserved.
           </p>
         </div>
       </div>

@@ -19,22 +19,12 @@ const ConsultationModal = ({
           <h2 className="text-3xl font-cinzel-bold text-[#002D67]">
             Book Your Exclusive Consultation
           </h2>
-          <div className="flex items-center gap-3">
-            <a
-              href={PAY_RETAINER_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-gradient-to-r from-[#C9A84C] to-[#F0D080] hover:from-[#F0D080] hover:to-[#C9A84C] text-[#05172A] font-cinzel-semibold px-4 py-2 rounded-full transition-all duration-300 transform hover:scale-105 shadow-md text-xs tracking-widest whitespace-nowrap"
-            >
-              PAY RETAINER
-            </a>
-            <button
-              onClick={() => setShowConsultationForm(false)}
-              className="text-[#002D67] hover:text-[#fd7aa3] text-3xl font-bold transition-colors duration-300 leading-none"
-            >
-              ×
-            </button>
-          </div>
+          <button
+            onClick={() => setShowConsultationForm(false)}
+            className="text-[#002D67] hover:text-[#fd7aa3] text-3xl font-bold transition-colors duration-300 leading-none"
+          >
+            ×
+          </button>
         </div>
 
         <div className="mb-6">
@@ -83,9 +73,7 @@ const ConsultationModal = ({
               name="name"
               placeholder="Your Name"
               value={formData.name}
-              onChange={(e) =>
-                setFormData({ ...formData, name: e.target.value })
-              }
+              onChange={(e) => setFormData({ ...formData, name: e.target.value })}
               required
               className="border-2 border-[#FEACC6] rounded-2xl px-4 py-3 w-full focus:outline-none focus:border-[#fd7aa3] focus:ring-2 focus:ring-[#fd7aa3]/20 transition-all duration-300 bg-white font-sans text-[#002D67] placeholder-gray-500"
             />
@@ -94,9 +82,7 @@ const ConsultationModal = ({
               name="email"
               placeholder="Your Email"
               value={formData.email}
-              onChange={(e) =>
-                setFormData({ ...formData, email: e.target.value })
-              }
+              onChange={(e) => setFormData({ ...formData, email: e.target.value })}
               required
               className="border-2 border-[#FEACC6] rounded-2xl px-4 py-3 w-full focus:outline-none focus:border-[#fd7aa3] focus:ring-2 focus:ring-[#fd7aa3]/20 transition-all duration-300 bg-white font-sans text-[#002D67] placeholder-gray-500"
             />
@@ -105,9 +91,7 @@ const ConsultationModal = ({
               name="phone"
               placeholder="Your Phone"
               value={formData.phone}
-              onChange={(e) =>
-                setFormData({ ...formData, phone: e.target.value })
-              }
+              onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
               required
               className="border-2 border-[#FEACC6] rounded-2xl px-4 py-3 w-full focus:outline-none focus:border-[#fd7aa3] focus:ring-2 focus:ring-[#fd7aa3]/20 transition-all duration-300 bg-white font-sans text-[#002D67] placeholder-gray-500"
             />
@@ -116,9 +100,7 @@ const ConsultationModal = ({
               name="eventType"
               placeholder="Event Type (Wedding, Corporate, etc.)"
               value={formData.eventType}
-              onChange={(e) =>
-                setFormData({ ...formData, eventType: e.target.value })
-              }
+              onChange={(e) => setFormData({ ...formData, eventType: e.target.value })}
               required
               className="border-2 border-[#FEACC6] rounded-2xl px-4 py-3 w-full focus:outline-none focus:border-[#fd7aa3] focus:ring-2 focus:ring-[#fd7aa3]/20 transition-all duration-300 bg-white font-sans text-[#002D67] placeholder-gray-500"
             />
@@ -127,9 +109,7 @@ const ConsultationModal = ({
               name="eventDate"
               placeholder="Event Date"
               value={formData.eventDate}
-              onChange={(e) =>
-                setFormData({ ...formData, eventDate: e.target.value })
-              }
+              onChange={(e) => setFormData({ ...formData, eventDate: e.target.value })}
               required
               className="border-2 border-[#FEACC6] rounded-2xl px-4 py-3 w-full focus:outline-none focus:border-[#fd7aa3] focus:ring-2 focus:ring-[#fd7aa3]/20 transition-all duration-300 bg-white font-sans text-[#002D67] placeholder-gray-500"
             />
@@ -138,9 +118,7 @@ const ConsultationModal = ({
               name="budget"
               placeholder="Estimated Budget"
               value={formData.budget}
-              onChange={(e) =>
-                setFormData({ ...formData, budget: e.target.value })
-              }
+              onChange={(e) => setFormData({ ...formData, budget: e.target.value })}
               required
               min={3000}
               className="border-2 border-[#FEACC6] rounded-2xl px-4 py-3 w-full focus:outline-none focus:border-[#fd7aa3] focus:ring-2 focus:ring-[#fd7aa3]/20 transition-all duration-300 bg-white font-sans text-[#002D67] placeholder-gray-500"
@@ -151,9 +129,7 @@ const ConsultationModal = ({
             name="description"
             placeholder="Tell us about your dream event..."
             value={formData.description}
-            onChange={(e) =>
-              setFormData({ ...formData, description: e.target.value })
-            }
+            onChange={(e) => setFormData({ ...formData, description: e.target.value })}
             rows={4}
             className="border-2 border-[#FEACC6] rounded-2xl px-4 py-3 w-full focus:outline-none focus:border-[#fd7aa3] focus:ring-2 focus:ring-[#fd7aa3]/20 transition-all duration-300 bg-white font-sans text-[#002D67] placeholder-gray-500"
           />

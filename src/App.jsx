@@ -98,7 +98,7 @@ const App = () => {
       <Social setShowConsultationForm={setShowConsultationForm} />
       <Launches setShowConsultationForm={setShowConsultationForm} />
       <FinalCTA setShowConsultationForm={setShowConsultationForm} />
-      <Footer />
+      <Footer scrollToSection={scrollToSection} />
                 
       <ConsultationModal 
         showConsultationForm={showConsultationForm}
