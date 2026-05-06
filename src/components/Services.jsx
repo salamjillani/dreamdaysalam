@@ -18,7 +18,7 @@ const ImageCarousel = ({ images, title, description }) => {
 
   const prevSlide = () => {
     setCurrentIndex(
-      (prevIndex) => (prevIndex - 1 + images.length) % images.length
+      (prevIndex) => (prevIndex - 1 + images.length) % images.length,
     );
   };
 
@@ -34,17 +34,20 @@ const ImageCarousel = ({ images, title, description }) => {
       </div>
 
       <div className="relative w-full">
-        <div className="relative overflow-hidden rounded-2xl shadow-2xl">
+        <div className="relative overflow-hidden rounded-2xl shadow-2xl bg-[#05172A]">
           <div
             className="flex transition-transform duration-500 ease-in-out"
             style={{ transform: `translateX(-${currentIndex * 100}%)` }}
           >
             {images.map((image, index) => (
-              <div key={index} className="w-full flex-shrink-0">
+              <div
+                key={index}
+                className="w-full flex-shrink-0 bg-[#05172A] flex items-center justify-center"
+              >
                 <img
                   src={image.src}
-                  alt={image.alt}
-                  className="w-full h-80 sm:h-96 md:h-[32rem] lg:h-[40rem] xl:h-[44rem] object-cover"
+                  alt={image.alt || title}
+                  className="w-full h-72 sm:h-80 md:h-[32rem] lg:h-[40rem] xl:h-[44rem] object-contain md:object-cover"
                 />
               </div>
             ))}
@@ -110,12 +113,13 @@ const Services = () => {
         { src: "/exclusivevenues/venue25.jpg" },
         { src: "/exclusivevenues/venue26.jpg" },
         { src: "/exclusivevenues/venue27.jpg" },
-        { src: "/exclusivevenues/venue28.jpg" }
+        { src: "/exclusivevenues/venue28.jpg" },
       ],
     },
     {
       title: "Corporate Events",
-      description: "Corporate, indoor and outdoor, theatres, parks, tradeshows, grand opening, brand launches, and celebrations.",
+      description:
+        "Corporate, indoor and outdoor, theatres, parks, tradeshows, grand opening, brand launches, and celebrations.",
       images: [
         { src: "/corporateevents/corporateevents1.jpg" },
         { src: "/corporateevents/corporateevents2.jpg" },
@@ -128,7 +132,7 @@ const Services = () => {
         { src: "/corporateevents/corporateevents10.jpg" },
         { src: "/corporateevents/corporateevents11.png" },
         { src: "/corporateevents/corporateevents15.png" },
-        { src: "/corporateevents/corporateevents16.jpg" }
+        { src: "/corporateevents/corporateevents16.jpg" },
       ],
     },
     {
@@ -144,7 +148,7 @@ const Services = () => {
         { src: "/themedcelebrations/themed7.jpg" },
         { src: "/themedcelebrations/themed8.png" },
         { src: "/themedcelebrations/themed9.jpg" },
-        { src: "/themedcelebrations/themed10.jpg" }
+        { src: "/themedcelebrations/themed10.jpg" },
       ],
     },
     {
@@ -158,7 +162,7 @@ const Services = () => {
         { src: "/customproductions/production5.jpg" },
         { src: "/customproductions/production6.jpg" },
         { src: "/customproductions/production7.jpg" },
-        { src: "/customproductions/production8.jpg" }
+        { src: "/customproductions/production8.jpg" },
       ],
     },
     {
@@ -176,13 +180,16 @@ const Services = () => {
         { src: "/intimategatherings/intimate9.jpeg" },
         { src: "/intimategatherings/intimate12.png" },
         { src: "/intimategatherings/intimate13.png" },
-        { src: "/intimategatherings/intimate13.jpeg" }
+        { src: "/intimategatherings/intimate13.jpeg" },
       ],
     },
   ];
 
   return (
-    <section id="services" className="py-20 px-4 relative overflow-hidden bg-[#05172A]">
+    <section
+      id="services"
+      className="py-20 px-4 relative overflow-hidden bg-[#05172A]"
+    >
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-5xl md:text-6xl font-cinzel-bold bg-gradient-to-r from-[#FEACC6] to-[#fd7aa3] bg-clip-text text-transparent mb-6">
